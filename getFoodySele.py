@@ -16,10 +16,10 @@ print("sample test case started")
 #maximize the window size
 driver.maximize_window()
 #navigate to the url
-driver.get("https://www.aivivn.com/")
+driver.get("https://www.foody.vn/da-nang/nha-hang")
 time.sleep(3)
 #click on the Google search button
-button = driver.find_element_by_xpath("/html/body/div/div/div[2]/div/div/button")
+button = driver.find_element_by_xpath("/html/body/div[2]/section/div/div[2]/div/div/div/div/div[2]/div[5]/div[1]/div/div/div[1]/div[2]/div[1]/div[2]/h2/a")
 
 button.click()
 time.sleep(20)
