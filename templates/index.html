@@ -18,7 +18,7 @@
 				<a class="navbar-brand d-flex" href="#">
 					<!-- <img src="{{url_for('static', filename='img/avatar.png')}}" width="30" height="30" class="d-inline-block align-top" alt=""> -->
 					<!-- <img src="/static/img/avatar.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
-					<img src="{{url_for('static', filename='img/avatar.png')}}" style="height: 30px; border-right: 1px solid #333333;" class="pr-2" alt="">
+					<img src="{{url_for('static', filename='img/avatar.png')}}" style="height: 30px; border-right: 0.5px solid #333333;" class="pr-2" alt="">
 				  	<div class="pl-2">Hôm nay ăn gì?</div>
 				</a>
 				<form class="form-inline my-2 my-lg-0">
@@ -26,51 +26,52 @@
 					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
 				</form>
 				<form action="/login">
-					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Register</button>
-					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Login</button>
+					<!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Login</button> -->
+					<!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Register</button>				 -->
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Log out</button>						
 				</form>
 			</nav>			
 		</div>
-		<br>
-		<div class="container">
-			<nav class="navbar bg-light">
-				<ul class="nav nav-tabs">
-					<li class="nav-item">
-						  <a class="nav-link active" href="#">Recommend</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Rice</a>
-					  </li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Drink</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Fastfood</a>
-					</li>				
-				</ul> 
-				<br>
-				<br>
-				<br>
-				<br>
-				<div class="card-deck">			
-					{% for i in range(0, lname|length) %}
-					<!-- col-lg-3 -->
-						<div class="col-sm-6 col-md-4 col-12">						
-							<div class = "card" style="height: 400px;">
-								<img class="card-img-top" src="{{ limage[i] }}" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">{{ lname[i] }}</h5>
-									<p class="card-text">Rating: {{ lrating[i] }}</p>
-									<p class="card-text"><small class="text-muted">Last updated 5 seconds ago</small></p>
-								</div>
-							</div>	
-							{% if i % 3 == 0 %}
-								<br>
-							{% endif %}					
-						</div>					
-					{% endfor %}                                
-				</div>  
-			</nav>                   
-        </div> 
+		<div style="background-color: #f8f9fa;">
+			<!-- <br> -->
+			<div class="container">
+				<nav class="navbar navbar-light bg-light">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Recommend</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Rice</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Drink</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Fastfood</a>
+						</li>				
+					</ul>
+				</nav> 
+				<nav class="navbar navbar-light bg-light">
+					<div class="card-deck">			
+						{% for i in range(0, lname|length) %}
+						<!-- col-lg-3 -->
+							<div class="col-md-4 col-sm-6 col-12">						
+								<div class = "card" style="height: 400px;">
+									<img class="card-img-top" src="{{ limage[i] }}" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title">{{ lname[i] }}</h5>
+										<p class="card-text">Rating: {{ lrating[i] }}</p>
+										<p class="card-text"><small class="text-muted">Last updated 5 seconds ago</small></p>
+									</div>
+								</div>	
+								{% if i % 3 == 0 %}
+									<br>
+								{% endif %}					
+							</div>					
+						{% endfor %}                                
+					</div>  
+				</nav>                   
+			</div>
+		</div>		 
 	</body>
 </html>
