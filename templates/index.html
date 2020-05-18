@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">		        
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		
 		<!-- <script src="{{ url_for('static', filename='index.js') }}"></script>     -->
@@ -30,48 +32,60 @@
 					<!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Register</button>				 -->
 					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Log out</button>						
 				</form>
-			</nav>			
+			</nav>	
+			<div style="background-color: #f8f9fa;">
+				<!-- <br> -->
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a data-toggle="tab" class="nav-link active" href="#main_pane">Recommend</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="tab" class="nav-link " href="#menu1">Rice</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="tab" class="nav-link " href="#menu2">Drink</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="tab" class="nav-link " href="#menu3">Fastfood</a>
+					</li>				
+				</ul>
+				<div class="tab-content">
+					<div id="main_pane" class="container tab-pane active">
+						<br>
+						<div class="card-deck">			
+							{% for i in range(0, lname|length) %}
+							<!-- col-lg-3 -->
+								<div class="col-md-4 col-sm-6 col-12">						
+									<div class = "card" style="height: 400px;">
+										<img class="card-img-top" src="{{ limage[i] }}" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title">{{ lname[i] }}</h5>
+											<p class="card-text">Rating: {{ lrating[i] }}</p>
+											<p class="card-text"><small class="text-muted">Last updated 5 seconds ago</small></p>
+										</div>
+									</div>	
+									{% if i % 3 == 0 %}
+										<br>
+									{% endif %}					
+								</div>					
+							{% endfor %}                                
+						</div>  
+					</div>
+					<div id="menu1" class=" container tab-pane fade">
+						<h3>Menu 1</h3>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<div id="menu2" class="container tab-pane fade">
+						<h3>Menu 2</h3>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					</div>
+					<div id="menu3" class="container tab-pane fade">
+						<h3>Menu 3</h3>
+						<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					</div>
+				</div>
+			</div>			
 		</div>
-		<div style="background-color: #f8f9fa;">
-			<!-- <br> -->
-			<div class="container">
-				<nav class="navbar navbar-light bg-light">
-					<ul class="nav nav-tabs">
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Recommend</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Rice</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Drink</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Fastfood</a>
-						</li>				
-					</ul>
-				</nav> 
-				<nav class="navbar navbar-light bg-light">
-					<div class="card-deck">			
-						{% for i in range(0, lname|length) %}
-						<!-- col-lg-3 -->
-							<div class="col-md-4 col-sm-6 col-12">						
-								<div class = "card" style="height: 400px;">
-									<img class="card-img-top" src="{{ limage[i] }}" alt="Card image cap">
-									<div class="card-body">
-										<h5 class="card-title">{{ lname[i] }}</h5>
-										<p class="card-text">Rating: {{ lrating[i] }}</p>
-										<p class="card-text"><small class="text-muted">Last updated 5 seconds ago</small></p>
-									</div>
-								</div>	
-								{% if i % 3 == 0 %}
-									<br>
-								{% endif %}					
-							</div>					
-						{% endfor %}                                
-					</div>  
-				</nav>                   
-			</div>
-		</div>		 
+			 
 	</body>
 </html>
