@@ -38,61 +38,6 @@
 				</form>
 			</nav>	
 			<div style="background-color: #f8f9fa;">
-				<!-- <br> -->
-				<ul class="nav nav-tabs">
-					<li class="nav-item">
-						<a data-toggle="tab" class="nav-link active" href="#main_pane">Recommend</a>
-					</li>
-					<li class="nav-item">
-						<a data-toggle="tab" class="nav-link " href="#menu1">Rice</a>
-					</li>
-					<li class="nav-item">
-						<a data-toggle="tab" class="nav-link " href="#menu2">Drink</a>
-					</li>
-					<li class="nav-item">
-						<a data-toggle="tab" class="nav-link " href="#menu3">Fastfood</a>
-					</li>				
-				</ul>
-				<div class="tab-content">
-					<div id="main_pane" class="container tab-pane active">
-						<br>
-						<div class="card-deck">			
-							{% for i in range(0, lname|length) %}
-							<!-- col-lg-3 -->
-								<div class="col-md-4 col-sm-6 col-12">						
-									<div class = "card" style="height: 400px;">
-										<img class="card-img-top" src="{{ limage[i] }}" alt="Card image cap">
-										<div class="card-body">
-											<h5 class="card-title">{{ lname[i] }}</h5>
-											<p class="card-text">Rating: {{ lrating[i] }}</p>
-											<p class="card-text"><small class="text-muted">Last updated 5 seconds ago</small></p>
-										</div>
-									</div>	
-									{% if i % 3 == 0 %}
-										<br>
-									{% endif %}					
-								</div>					
-							{% endfor %}                                
-						</div>  
-					</div>
-					<div id="menu1" class=" container tab-pane fade">
-						<h3>Menu 1</h3>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					</div>
-					<div id="menu2" class="container tab-pane fade">
-						<h3>Menu 2</h3>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-					</div>
-					<div id="menu3" class="container tab-pane fade">
-						<h3>Menu 3</h3>
-						<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					</div>
-				</div>
-			</div>			
-		</div>
-		<div style="background-color: #f8f9fa;">
-			<!-- <br> -->
-			<div class="container">
 				<nav class="navbar navbar-light bg-light">
 					<ul class="nav nav-tabs">
 						<li class="nav-item">
@@ -110,31 +55,12 @@
 					</ul>
 				</nav> 
 				<nav class="navbar navbar-light bg-light">
-					<div class="card-deck">						
-						<div class="row row-cols-1 row-cols-lg-3" id="cardpost" style="width: 100%;"></div>		
-						
-						<!-- <div class="col-md-4 col-sm-6 col-12" id="cardpost">						
-						</div>	 -->
-						<!-- {% for i in range(0, lname|length) %}						
-							<div class="col-md-4 col-sm-6 col-12">						
-								<div class = "card" style="height: 400px;">
-									<img class="card-img-top" src="{{ limage[i] }}" alt="Card image cap">
-									<div class="card-body">
-										<h5 class="card-title">{{ lname[i] }}</h5>
-										<p class="card-text">Rating: {{ lrating[i] }}</p>
-										<p class="card-text"><small class="text-muted">Last updated 5 seconds ago</small></p>
-									</div>
-								</div>	
-								{% if i % 3 == 0 %}
-									<br>
-								{% endif %}					
-							</div>					
-						{% endfor %}                                 -->
+					<div class="card-deck" id="cardpost">				
+					
 					</div>  
-				</nav>                   
-			</div>
-		</div>	
-		<!-- <div id="cardpost">
-		</div>	  -->
+				</nav>   
+			</div>			
+		</div>
+		
 	</body>
 </html>

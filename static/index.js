@@ -42,11 +42,15 @@ function load() {
 // Add a new post with given contents to DOM.
 function add_post(contents) {
 
+    const col = document.createElement('div');
+    col.className = 'col-md-4 col-sm-6 col-12';
+    col.style = 'margin-bottom: 15px;';
+
     // Create new post.
     const post = document.createElement('div');
     post.className = 'card';
-    post.innerHTML = contents;
-    post.style = "height: 600px;"
+    //post.innerHTML = contents;
+    post.style = "height: 400px;"
     // post.style = "max-width: 140rem;"
 
     const post_img = document.createElement('img')
@@ -70,7 +74,9 @@ function add_post(contents) {
 
     post.append(post_img)
     post.append(post_card)
+    
+    col.append(post);
     // Add post to DOM.
-    document.querySelector('#cardpost').append(post);
+    document.querySelector('#cardpost').append(col);
     document.querySelector('#cardpost').append(document.createElement('br'));
 };
