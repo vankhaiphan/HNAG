@@ -9,9 +9,13 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		
-		<!-- <script src="{{ url_for('static', filename='index.js') }}"></script>     -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+		<script src="{{ url_for('static', filename='index.js') }}"></script>    
 		<title>Hôm nay ăn gì?</title>
+		<link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico')}}">
+		<script>
+			
+		</script>
 	</head>
 	<body>
 		<div class="container">
@@ -86,6 +90,51 @@
 				</div>
 			</div>			
 		</div>
-			 
+		<div style="background-color: #f8f9fa;">
+			<!-- <br> -->
+			<div class="container">
+				<nav class="navbar navbar-light bg-light">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Recommend</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Rice</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Drink</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Fastfood</a>
+						</li>				
+					</ul>
+				</nav> 
+				<nav class="navbar navbar-light bg-light">
+					<div class="card-deck">						
+						<div class="row row-cols-1 row-cols-lg-3" id="cardpost" style="width: 100%;"></div>		
+						
+						<!-- <div class="col-md-4 col-sm-6 col-12" id="cardpost">						
+						</div>	 -->
+						<!-- {% for i in range(0, lname|length) %}						
+							<div class="col-md-4 col-sm-6 col-12">						
+								<div class = "card" style="height: 400px;">
+									<img class="card-img-top" src="{{ limage[i] }}" alt="Card image cap">
+									<div class="card-body">
+										<h5 class="card-title">{{ lname[i] }}</h5>
+										<p class="card-text">Rating: {{ lrating[i] }}</p>
+										<p class="card-text"><small class="text-muted">Last updated 5 seconds ago</small></p>
+									</div>
+								</div>	
+								{% if i % 3 == 0 %}
+									<br>
+								{% endif %}					
+							</div>					
+						{% endfor %}                                 -->
+					</div>  
+				</nav>                   
+			</div>
+		</div>	
+		<!-- <div id="cardpost">
+		</div>	  -->
 	</body>
 </html>
