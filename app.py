@@ -51,20 +51,27 @@ def posts():
     limage = []
     dt = []
     data = pd.read_csv('data.csv', sep=',')
-    for i in range(start, end + 1):        
+    for i in range(start, end + 1):   
+        lJson = {
+            "name": data.loc[i][0],
+            "rate": data.loc[i][1],
+            "image": data.loc[i][2]
+        }
+        dt.append(lJson)
         # lname.append(data.loc[i][0])
         # lrating.append(data.loc[i][1])
-        # limage.append(data.loc[i][2])
-        dt.append(f"Post #{i}") 
+        # limage.append(data.loc[i][2]) 
+        # dt.append(f"Post #{i}")
 
     # Artificially delay speed of response.
     time.sleep(1)    
     # Return list of posts.
     # return (jsonify({
-        # "name": lname,
-        # "rating": lrating,
-        # "image": limage
+    #     "name": lname,
+    #     "rating": lrating,
+    #     "image": limage
     # }))
+    print(dt)
     return jsonify(dt)
       
 if __name__ == "__main__":

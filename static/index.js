@@ -16,7 +16,6 @@ window.onscroll = () => {
 
 // Load next set of posts.
 function load() {
-
     // Set start and end post numbers, and update counter.
     const start = counter;
     const end = start + quantity - 1;
@@ -63,7 +62,8 @@ function add_post(contents) {
 
     const h5 = document.createElement('h5')
     h5.className = "card-title"
-    h5.innerHTML = "Name restaurant"
+    // h5.innerHTML = "Name restaurant"
+    h5.innerHTML = contents;
 
     const prate = document.createElement('p')
     prate.className = "card-text"
