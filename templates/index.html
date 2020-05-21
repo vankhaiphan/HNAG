@@ -53,6 +53,15 @@
 				request.send(data);
 			};
 
+			//Show modal whenever a card is clicked
+			function showModal(e) {
+				//alert('hello');
+				const modal = $("#detailModal");
+				const imgSrc = $(e).find("img").attr("src");
+				modal.find("img").attr("src", imgSrc); 
+				modal.modal();
+			};
+
 			// Add a new post with given contents to DOM.
 			function add_post(contents) {
 
@@ -64,7 +73,9 @@
 				const post = document.createElement('div');
 				post.className = 'card';
 				post.style = "height: 400px;"
-
+				post.onclick = () => {
+					showModal(post)
+				}
 				const post_img = document.createElement('img')
 				post_img.className = 'card-img-top'
 				post_img.src = contents["image"]
@@ -88,10 +99,13 @@
 				post.append(post_card)
 				
 				col.append(post);
+				
 				// Add post to DOM.
 				document.querySelector('#cardpost').append(col);
 				// document.querySelector('#cardpost').append(document.createElement('br'));
 			};
+
+
 		</script>
 	</head>
 	<body>
@@ -131,11 +145,38 @@
 						</li>				
 					</ul>
 				</nav> 
+				<!-- Modal -->
+				<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							<!-- <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5> -->
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							</div>
+							<div class="modal-body">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-md-8">
+											<img style="width:100%;">
+										</div>
+										<div class="col-md-4">content</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div> -->
+						</div>
+					</div>
+				</div> 
 				<div class="tab-content">
 					<div class="tab-pane active container" id="main-menu">
 						<div class="card-deck" id="cardpost">				
 					
-						</div>  
+						</div> 						
 					</div>
 					<div class="tab-pane container" id="menu1">
 						<h1>Menu1</h1>
@@ -152,3 +193,5 @@
 		
 	</body>
 </html>
+<script>
+</script>

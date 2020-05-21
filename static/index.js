@@ -14,6 +14,11 @@ window.onscroll = () => {
     }
 };
 
+function showModal() {
+    alert('hello');
+    //$("#exampleModalCenter").modal(show);
+};
+
 // Load next set of posts.
 function load() {
     // Set start and end post numbers, and update counter.
@@ -44,13 +49,14 @@ function add_post(contents) {
     const col = document.createElement('div');
     col.className = 'col-md-4 col-sm-6 col-12';
     col.style = 'margin-bottom: 15px;';
+    col.onclick = function () {
+        $("#exampleModalCenter").modal(show)
+    };
 
     // Create new post.
     const post = document.createElement('div');
     post.className = 'card';
-    //post.innerHTML = contents;
     post.style = "height: 400px;"
-    // post.style = "max-width: 140rem;"
 
     const post_img = document.createElement('img')
     post_img.className = 'card-img-top'
@@ -80,3 +86,4 @@ function add_post(contents) {
     document.querySelector('#cardpost').append(col);
     document.querySelector('#cardpost').append(document.createElement('br'));
 };
+
