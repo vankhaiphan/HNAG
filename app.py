@@ -50,12 +50,13 @@ def posts():
     lrating = []
     limage = []
     dt = []
-    data = pd.read_csv('data.csv', sep=',')
+    data = pd.read_csv('data2.csv', sep=',')
     for i in range(start, end + 1):   
         lJson = {
-            "name": data.loc[i][0],
-            "rate": data.loc[i][1],
-            "image": data.loc[i][2]
+            "url": data.loc[i][0],
+            "name": data.loc[i][1],
+            "rate": data.loc[i][2],
+            "image": data.loc[i][3]
         }
         dt.append(lJson)
         # dt.append(f"Post #{i}")

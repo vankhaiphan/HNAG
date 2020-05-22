@@ -16,11 +16,13 @@ for j in range(1,10):
     page = requests.get(url)
     soup = BeautifulSoup(page.text, 'html.parser')
     number = 12
+    
     journey = soup.findAll("div", class_='row-item filter-result-item')[:number]
     rates = soup.findAll("div", class_='point highlight-text')[:number]
     images = soup.findAll("div", class_='ri-avatar result-image')[:number]
 
     for i in range(0, len(journey)):
+        sURL = images[i].find('a')['href']
         sName = str(journey[i].find("h2").text)
         sName.strip("\n\r\n")
         sName = sName[43:len(sName) - 39]
@@ -34,13 +36,14 @@ for j in range(1,10):
         sImage = images[i].find('img')['src']
         limage.append(sImage)
         lJson = {
+            "url": sURL,
             "name":  sName,
             "rate": sRating,
             "image": sImage
         }
         print(lJson)
-        with open("data.csv","a",encoding='utf-8') as f:            
-            fnames = ["name", "rate", "image"]
+        with open("data2.csv","a",encoding='utf-8') as f:            
+            fnames = ["url","name", "rate", "image"]
             writer = csv.DictWriter(f, fieldnames=fnames)    
             writer.writerow(lJson)
         # with open("data.json") as json_file:

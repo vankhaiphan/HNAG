@@ -17,6 +17,8 @@ def index():
         images = soup.findAll("div", class_='ri-avatar result-image')[:number]
 
         for i in range(0, len(journey)):
+
+            
             sName = journey[i].find("h2").text
             sName.strip("\n\r\n")
             lname.append(sName[43:len(sName) - 39])

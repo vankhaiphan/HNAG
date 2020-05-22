@@ -60,6 +60,8 @@
 				const imgSrc = $(e).find("img").attr("src");
 				modal.find("img").attr("src", imgSrc); 
 				modal.modal();
+				e.preventDefault();
+				return false;
 			};
 
 			// Add a new post with given contents to DOM.
@@ -68,6 +70,14 @@
 				const col = document.createElement('div');
 				col.className = 'col-md-4 col-sm-6 col-12';
 				col.style = 'margin-bottom: 15px;';
+
+				//link to the main post
+				const urlWrapper = document.createElement('a');
+				urlWrapper.href = "https://www.foody.vn/"+contents["url"]
+				urlWrapper.onclick = () => {
+					showModal(post)
+				}
+				urlWrapper.style = 'text-decoration: none; color: black;';
 
 				// Create new post.
 				const post = document.createElement('div');
@@ -98,7 +108,8 @@
 				post.append(post_img)
 				post.append(post_card)
 				
-				col.append(post);
+				urlWrapper.append(post);
+				col.append(urlWrapper);
 				
 				// Add post to DOM.
 				document.querySelector('#cardpost').append(col);
