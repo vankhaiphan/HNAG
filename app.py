@@ -2,6 +2,7 @@ import sys
 import time
 import requests
 import pandas as pd
+import rdflib
 from bs4 import BeautifulSoup
 from flask import Flask, jsonify, render_template, request
 
@@ -50,22 +51,43 @@ def posts():
     lrating = []
     limage = []
     dt = []
-    data = pd.read_csv('data2.csv', sep=',')
-    for i in range(start, end + 1):   
+    # data = pd.read_csv('data2.csv', sep=',')
+    # for i in range(start, end + 1):   
+    #     lJson = {
+    #         "url": data.loc[i][0],
+    #         "name": data.loc[i][1],
+    #         "rate": data.loc[i][2],
+    #         "image": data.loc[i][3]
+    #     }
+    #     dt.append(lJson)
+    #     # dt.append(f"Post #{i}")
+
+    # # Artificially delay speed of response.
+    # time.sleep(1)    
+    # # Return list of posts.
+    # # print(dt)
+    # return jsonify(dt)
+    g = rdflib.Graph()
+    g = g.parse("data.xml", format="xml")
+    result = g.query("""
+        SELECT ?name ?url ?rating ?image
+        WHERE {
+            ?place cd:name ?name.
+            ?place cd:url ?url.
+            ?place cd:rating ?rating.
+            ?place cd:image ?image.
+            ?place cd:id ?id
+        } LIMIT 9""")
+    for row in result:
+        print(row.name.toPython())
         lJson = {
-            "url": data.loc[i][0],
-            "name": data.loc[i][1],
-            "rate": data.loc[i][2],
-            "image": data.loc[i][3]
+            "url": row.url.toPython(),
+            "name": row.name.toPython(),
+            "rate": row.rating.toPython(),
+            "image": row.image.toPython()
         }
         dt.append(lJson)
-        # dt.append(f"Post #{i}")
-
-    # Artificially delay speed of response.
-    time.sleep(1)    
-    # Return list of posts.
-    # print(dt)
     return jsonify(dt)
-      
+
 if __name__ == "__main__":
     app.run(debug=True)    
