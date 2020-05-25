@@ -2,6 +2,8 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
+import pandas as pd
+import time
 
 # Create your views here.
 def index(request):
@@ -10,7 +12,7 @@ def index(request):
     context = {
         "user": request.user
     }
-    return render(request, "hnag/user.html", context)
+    return render(request, "hnag/index.html", context)
 
 def login_view(request):
     username = request.POST["username"]
@@ -25,3 +27,54 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return render(request, "hnag/login.html", {"message": "Logged out."})
+
+def posts(request):
+    # Get start and end point for posts to generate.
+    start = int(request.form.get("start") or 0)
+    end = int(request.form.get("end") or (start + 9))
+
+    # Generate list of posts.
+    lname = []
+    lrating = []
+    limage = []
+    dt = []
+    data = pd.read_csv('data.csv', sep=',')
+    for i in range(start, end + 1):   
+        lJson = {
+            "url": data.loc[i][0],
+            "name": data.loc[i][1],
+            "rate": data.loc[i][2],
+            "image": data.loc[i][3]
+        }
+        dt.append(lJson)
+        # dt.append(f"Post #{i}")
+
+    # Artificially delay speed of response.
+    time.sleep(1)    
+    # Return list of posts.
+    # print(dt)
+    return jsonify(dt)
+    # g = rdflib.Graph()
+    # g = g.parse("data.xml", format="xml")
+
+    # result = g.query("""
+    #     SELECT DISTINCT ?name ?url ?rating ?image ?id
+    #     WHERE {
+    #         ?place cd:name ?name.
+    #         ?place cd:url ?url.
+    #         ?place cd:rating ?rating.
+    #         ?place cd:image ?image.
+    #         ?place cd:id ?id.
+    #     } 
+    #     ORDER BY (?id)
+    #     LIMIT 12""")
+    # for row in result:
+    #     print(row.id.toPython())
+    #     lJson = {
+    #         "url": row.url.toPython(),
+    #         "name": row.name.toPython(),
+    #         "rate": row.rating.toPython(),
+    #         "image": row.image.toPython()
+    #     }
+    #     dt.append(lJson)
+    # return jsonify(dt)

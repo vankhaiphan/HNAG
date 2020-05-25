@@ -1,0 +1,204 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		        		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>		
+		<title>Hôm nay ăn gì?</title>
+		<link rel="shortcut icon" href="{% static 'hnag/img/favicon.ico' %}">
+		<script>
+			// Start with first post.
+			let counter = 1;
+
+			// Load posts 6 at a time.
+			const quantity = 12;
+
+			// When DOM loads, render the first 6 posts.
+			document.addEventListener('DOMContentLoaded', load);
+
+			// If scrolled to bottom, load the next 6 posts.
+			window.onscroll = () => {
+				if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+					load();
+				}
+			};
+
+			// Load next set of posts.
+			function load() {
+				// Set start and end post numbers, and update counter.
+				const start = counter;
+				const end = start + quantity - 1;
+				counter = end + 1;
+
+				// Open new request to get new posts.
+				const request = new XMLHttpRequest();
+				request.open('POST', '/posts');
+				request.onload = () => {
+					const data = JSON.parse(request.responseText);
+					data.forEach(add_post);
+				};
+
+				// Add start and end points to request data.
+				const data = new FormData();
+				data.append('start', start);
+				data.append('end', end);
+
+				// Send request.
+				request.send(data);
+			};
+
+			//Show modal whenever a card is clicked
+			function showModal(e) {
+				//alert('hello');
+				const modal = $("#detailModal");
+				const imgSrc = $(e).find("img").attr("src");
+				modal.find("img").attr("src", imgSrc); 
+				modal.modal();
+				e.preventDefault();
+				return false;
+			};
+
+			// Add a new post with given contents to DOM.
+			function add_post(contents) {
+
+				const col = document.createElement('div');
+				col.className = 'col-md-4 col-sm-6 col-12';
+				col.style = 'margin-bottom: 15px;';
+
+				//link to the main post
+				const urlWrapper = document.createElement('a');
+				urlWrapper.href = "https://www.foody.vn/"+contents["url"]
+				urlWrapper.onclick = () => {
+					showModal(post)
+				}
+				urlWrapper.style = 'text-decoration: none; color: black;';
+
+				// Create new post.
+				const post = document.createElement('div');
+				post.className = 'card';
+				post.style = "height: 400px;"
+				post.onclick = () => {
+					showModal(post)
+				}
+				const post_img = document.createElement('img')
+				post_img.className = 'card-img-top'
+				post_img.src = contents["image"]
+				post_img.alt = "Card image cap"
+
+				const post_card = document.createElement('div')
+				post_card.className = "card-body"
+
+				const h5 = document.createElement('h5')
+				h5.className = "card-title"
+				h5.innerHTML = contents["name"];
+
+				const prate = document.createElement('p')
+				prate.className = "card-text"
+				prate.innerHTML = `Rating: ${contents["rate"]}`
+
+				post_card.append(h5)
+				post_card.append(prate)
+
+				post.append(post_img)
+				post.append(post_card)
+				
+				urlWrapper.append(post);
+				col.append(urlWrapper);
+				
+				// Add post to DOM.
+				document.querySelector('#cardpost').append(col);
+				// document.querySelector('#cardpost').append(document.createElement('br'));
+			};
+
+
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- <nav class="navbar navbar-light bg-light"> -->
+			<nav class="navbar navbar-light">
+				<a class="navbar-brand d-flex" href="#">					
+					<img src="{% static 'hnag/img/avatar.png' %}" style="height: 30px; border-right: 0.5px solid #333333;" class="pr-2" alt="">
+					<div class="pl-2">Hôm nay ăn gì?</div>
+				</a>									  
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+				</form>
+				<form action="{% url 'logout' %}">					
+					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Log out</button>						
+				</form>
+			</nav>
+			<div>Currently logged in as: {{ user.username }}</div>	
+			<div style="background-color: #f8f9fa;">
+				<nav class="navbar navbar-light bg-light">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#main-menu">Recommend</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#menu1">Rice</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#menu2">Drink</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#menu3">Fastfood</a>
+						</li>				
+					</ul>
+				</nav> 
+				<!-- Modal -->
+				<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							<!-- <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5> -->
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							</div>
+							<div class="modal-body">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-md-8">
+											<img style="width:100%;">
+										</div>
+										<div class="col-md-4">content</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div> -->
+						</div>
+					</div>
+				</div> 
+				<div class="tab-content">
+					<div class="tab-pane active container" id="main-menu">
+						<div class="card-deck" id="cardpost">				
+					
+						</div> 						
+					</div>
+					<div class="tab-pane container" id="menu1">
+						<h1>Menu1</h1>
+					</div>
+					<div class="tab-pane container" id="menu2">
+						<h1>Menu2</h1>
+					</div>
+					<div class="tab-pane container" id="menu3">
+						<h1>Mennu3</h1>
+					</div>
+				</div> 
+			</div>			
+		</div>		
+	</body>
+</html>
+<script>
+</script>
