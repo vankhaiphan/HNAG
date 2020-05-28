@@ -35,22 +35,26 @@
 				const start = counter;
 				const end = start + quantity - 1;
 				counter = end + 1;
+				fetch(`/posts?start=${start}&end=${end}`)
+                .then(response => response.json())
+                .then(data => {
+                    data.posts.forEach(add_post);
+                })
+				// // Open new request to get new posts.
+				// const request = new XMLHttpRequest();
+				// request.open('POST', '/posts');
+				// request.onload = () => {
+				// 	const data = JSON.parse(request.responseText);
+				// 	data.forEach(add_post);
+				// };
 
-				// Open new request to get new posts.
-				const request = new XMLHttpRequest();
-				request.open('POST', '/posts');
-				request.onload = () => {
-					const data = JSON.parse(request.responseText);
-					data.forEach(add_post);
-				};
+				// // Add start and end points to request data.
+				// const data = new FormData();
+				// data.append('start', start);
+				// data.append('end', end);
 
-				// Add start and end points to request data.
-				const data = new FormData();
-				data.append('start', start);
-				data.append('end', end);
-
-				// Send request.
-				request.send(data);
+				// // Send request.
+				// request.send(data);
 			};
 
 			//Show modal whenever a card is clicked

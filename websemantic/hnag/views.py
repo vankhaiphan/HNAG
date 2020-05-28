@@ -1,9 +1,10 @@
 from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
 import pandas as pd
 import time
+import rdflib
 
 # Create your views here.
 def index(request):
@@ -30,51 +31,56 @@ def logout_view(request):
 
 def posts(request):
     # Get start and end point for posts to generate.
-    start = int(request.form.get("start") or 0)
-    end = int(request.form.get("end") or (start + 9))
+    start = int(request.GET.get("start") or 0)
+    end = int(request.GET.get("end") or (start + 9))
 
     # Generate list of posts.
-    lname = []
-    lrating = []
-    limage = []
+    # lname = []
+    # lrating = []
+    # limage = []
     dt = []
-    data = pd.read_csv('data.csv', sep=',')
-    for i in range(start, end + 1):   
-        lJson = {
-            "url": data.loc[i][0],
-            "name": data.loc[i][1],
-            "rate": data.loc[i][2],
-            "image": data.loc[i][3]
-        }
-        dt.append(lJson)
+    # data = pd.read_csv('hnag/data.csv', sep=',')
+    # for i in range(start, end + 1):   
+    #     lJson = {
+    #         "url": data.loc[i][0],
+    #         "name": data.loc[i][1],
+    #         "rate": data.loc[i][2],
+    #         "image": data.loc[i][3]
+    #     }
+    #     dt.append(lJson)
         # dt.append(f"Post #{i}")
 
     # Artificially delay speed of response.
-    time.sleep(1)    
+    # time.sleep(1)    
     # Return list of posts.
     # print(dt)
-    return jsonify(dt)
-    # g = rdflib.Graph()
-    # g = g.parse("data.xml", format="xml")
+    # return JsonResponse({
+    #     "posts": dt
+    # })
 
-    # result = g.query("""
-    #     SELECT DISTINCT ?name ?url ?rating ?image ?id
-    #     WHERE {
-    #         ?place cd:name ?name.
-    #         ?place cd:url ?url.
-    #         ?place cd:rating ?rating.
-    #         ?place cd:image ?image.
-    #         ?place cd:id ?id.
-    #     } 
-    #     ORDER BY (?id)
-    #     LIMIT 12""")
-    # for row in result:
-    #     print(row.id.toPython())
-    #     lJson = {
-    #         "url": row.url.toPython(),
-    #         "name": row.name.toPython(),
-    #         "rate": row.rating.toPython(),
-    #         "image": row.image.toPython()
-    #     }
-    #     dt.append(lJson)
-    # return jsonify(dt)
+    g = rdflib.Graph()
+    g = g.parse("hnag/static/hnag/data.xml", format="xml")
+
+    result = g.query("""
+        SELECT DISTINCT ?name ?url ?rating ?image ?id
+        WHERE {
+            ?place cd:name ?name.
+            ?place cd:url ?url.
+            ?place cd:rating ?rating.
+            ?place cd:image ?image.
+            ?place cd:id ?id.
+        } 
+        ORDER BY (?id)
+        LIMIT 12""")
+    for row in result:
+        print(row.id.toPython())
+        lJson = {
+            "url": row.url.toPython(),
+            "name": row.name.toPython(),
+            "rate": row.rating.toPython(),
+            "image": row.image.toPython()
+        }
+        dt.append(lJson)
+    return JsonResponse({
+        "posts": dt
+    })
