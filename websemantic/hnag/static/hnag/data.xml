@@ -1,0 +1,652 @@
+<?xml version='1.0'?>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+ xmlns:cd='http://www.recshop.fake/cd#'>
+<rdf:Description><cd:url>/da-nang/gogi-house-quan-nuong-han-quoc-vincom-center-da-nang</cd:url>
+<cd:name>Hệ thống Gogi House - Quán Nướng Hàn Quốc - ĐN</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g15/147556/prof/s640x400/foody-mobile-gogi-house-dn1-mb-jp-611-635787900703764814.jpg</cd:image>
+<cd:id>000</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/pizza-hut-le-duan</cd:url>
+<cd:name>Hệ thống Pizza Hut - Đà Nẵng</cd:name>
+<cd:rating>7.2</cd:rating>
+<cd:image>https://images.foody.vn/res/g2/18678/prof/s640x400/foody-upload-api-foody-mobile-2-190620163026.jpg</cd:image>
+<cd:id>001</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/han-cook-cafe-food</cd:url>
+<cd:name>Hệ thống Hancook</cd:name>
+<cd:rating>7.8</cd:rating>
+<cd:image>https://images.foody.vn/res/g20/190802/prof/s640x400/foody-upload-api-foody-mobile-hancook-jpg-190103100855.jpg</cd:image>
+<cd:id>002</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/banh-trang-thit-heo-tran-le-duan</cd:url>
+<cd:name>Hệ thống Quán Trần - Đặc Sản Đà Nẵng</cd:name>
+<cd:rating>6.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/150/prof/s640x400/foody-mobile--bba8d83926e3bf1c989-524-635931405901928196.jpg</cd:image>
+<cd:id>003</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/xien-que-nguyen-thi-minh-khai</cd:url>
+<cd:name>Xiên Que - Nguyễn Thị Minh Khai</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g5/41178/prof/s640x400/foody-mobile-xien-que-sushi-jpg-306-635883649490025589.jpg</cd:image>
+<cd:id>004</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/al-fresco-s-pizza-my-y-suon-steak-bo-bit-tet-tran-phu</cd:url>
+<cd:name>Hệ thống Al Fresco’s Pizza Mỳ Ý Sườn Steak Bò Bít Tết - Đà Nẵng</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g4/36228/prof/s640x400/foody-upload-api-foody-mobile-2018122511624-4-sant-190102083757.jpg</cd:image>
+<cd:id>005</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/pho-nuong-tokyo</cd:url>
+<cd:name>Phố Nướng Tokyo</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g22/214989/prof/s640x400/foody-upload-api-foody-mobile-15-190319145437.jpg</cd:image>
+<cd:id>006</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/papasteak-152-phan-thanh</cd:url>
+<cd:name>Hệ thống PapaSteak</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g16/159179/prof/s640x400/foody-upload-api-foody-mobile-8ddafa3b-63f6-4ce6-a-200221133053.jpg</cd:image>
+<cd:id>007</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/cuisine-de-vin</cd:url>
+<cd:name>Cuisine De Vin - Bếp Nhà Vin</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g12/115342/prof/s640x400/foody-mobile-vin-22-jpg-536-635984020478644129.jpg</cd:image>
+<cd:id>008</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/faifo-grill-buffet-restaurant</cd:url>
+<cd:name>Hệ thống Faifo Grill &amp; Buffet Restaurant</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g18/170016/prof/s640x400/foody-upload-api-foody-mobile-faifo-jpg-181221150818.jpg</cd:image>
+<cd:id>009</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/koko-green-kafe</cd:url>
+<cd:name>KoKo Green Kafe</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g30/292251/prof/s640x400/foody-upload-api-foody-mobile-koko-green-kafe-jpg-180620103013.jpg</cd:image>
+<cd:id>010</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/snow-pizza</cd:url>
+<cd:name>Snow Pizza</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g18/170341/prof/s640x400/foody-mobile-sn-jpg-583-636397115846551906.jpg</cd:image>
+<cd:id>011</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dasushi-nha-hang-nhat-ban</cd:url>
+<cd:name>Hệ thống Dasushi - Đà Nẵng</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/94257/prof/s640x400/foody-mobile-10399619_81147453229-527-635863817212109582.jpg</cd:image>
+<cd:id>012</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/lotteria-nguyen-thi-minh-khai</cd:url>
+<cd:name>Hệ thống Lotteria - Gà Rán - Đà Nẵng</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g2/12074/prof/s640x400/foody-upload-api-foody-mobile-4-190620114411.jpg</cd:image>
+<cd:id>013</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/cua-bien-quan</cd:url>
+<cd:name>Cua Biển Quán - Hải Sản Bờ Biển</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g11/106321/prof/s640x400/foody-mobile-cua-bien-jpg.jpg</cd:image>
+<cd:id>014</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/lau-bang-chuyen-kichi-kichi-vincom-center-da-nang</cd:url>
+<cd:name>Hệ thống Lẩu Băng Chuyền Kichi Kichi</cd:name>
+<cd:rating>8.0</cd:rating>
+<cd:image>https://images.foody.vn/res/g18/179002/prof/s640x400/foody-mobile-kichi-2-jpg-804-635812066400462640.jpg</cd:image>
+<cd:id>015</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/food-center-bach-dang</cd:url>
+<cd:name>Food Center Đà Nẵng</cd:name>
+<cd:rating>7.8</cd:rating>
+<cd:image>https://images.foody.vn/res/g23/224233/prof/s640x400/foody-upload-api-foody-mobile-food-center-da-nang--180620165027.jpg</cd:image>
+<cd:id>016</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/star-beef</cd:url>
+<cd:name>Star Beef</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/87167/prof/s640x400/foody-mobile-3-1-jpg-394-635628750690512238.jpg</cd:image>
+<cd:id>017</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/sumo-bbq-buffet-lau-nuong</cd:url>
+<cd:name>Sumo BBQ - Buffet Lẩu &amp; Nướng</cd:name>
+<cd:rating>7.0</cd:rating>
+<cd:image>https://images.foody.vn/res/g25/244037/prof/s640x400/foody-mobile-m-hu-jpg-590-636010810542005222.jpg</cd:image>
+<cd:id>018</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/crystal-jade-kitchen-vincom-ngo-quyen-nha-hang-quang-dong</cd:url>
+<cd:name>Crystal Jade Kitchen - Vincom Ngô Quyền - Nhà Hàng Quảng Đông</cd:name>
+<cd:rating>7.0</cd:rating>
+<cd:image>https://images.foody.vn/res/g15/147983/prof/s640x400/foody-upload-api-foody-mobile-crystal-jade-kitchen-180620154504.jpg</cd:image>
+<cd:id>019</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/pizza-4p-s-pizza-kieu-nhat-hoang-van-thu</cd:url>
+<cd:name>Hệ thống Pizza 4P’s - Pizza Kiểu Nhật</cd:name>
+<cd:rating>8.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g27/269438/prof/s640x400/foody-mobile-ava-jpg-325-636177345538537741.jpg</cd:image>
+<cd:id>020</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/papas-chicken-restaurant</cd:url>
+<cd:name>Papas' Chicken Restaurant</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g67/660741/prof/s640x400/foody-mobile-pa-jpg.jpg</cd:image>
+<cd:id>021</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/samdi-khong-gian-xua</cd:url>
+<cd:name>Hệ thống Samdi Hotel</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/6500/prof/s640x400/foody-mobile-sa1-jpg.jpg</cd:image>
+<cd:id>022</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/nha-hang-lang-nghe-le-loi</cd:url>
+<cd:name>NH Làng Nghệ - Cafe - Ăn Sáng - Cơm Niêu - Các Món Nhậu</cd:name>
+<cd:rating>8.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g16/156306/prof/s640x400/foody-mobile-12549058_16974521504-899-635882916863764195.jpg</cd:image>
+<cd:id>023</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bushido-restaurant</cd:url>
+<cd:name>Bushido Restaurant</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g12/119072/prof/s640x400/foody-upload-api-foody-mobile-20-191008164949.jpg</cd:image>
+<cd:id>024</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/xien-nuong-banjiro</cd:url>
+<cd:name>Xiên Nướng Banjiro</cd:name>
+<cd:rating>7.8</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/88414/prof/s640x400/foody-upload-api-foody-mobile-banjiro-jpg-181003100642.jpg</cd:image>
+<cd:id>025</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/hai-cang-restaurant-am-thuc-trung-hoa-novotel</cd:url>
+<cd:name>Hải Cảng Restaurant - Ẩm Thực Trung Hoa - Novotel</cd:name>
+<cd:rating>8.8</cd:rating>
+<cd:image>https://images.foody.vn/res/g64/630414/prof/s640x400/foody-mobile-hcang-jpg-740-636419464577152750.jpg</cd:image>
+<cd:id>026</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/retro-kitchen-bar</cd:url>
+<cd:name>Retro Kitchen &amp; Bar</cd:name>
+<cd:rating>7.8</cd:rating>
+<cd:image>https://images.foody.vn/res/g17/162043/prof/s640x400/foody-mobile-tro-jpg.jpg</cd:image>
+<cd:id>027</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/jollibee-vincom-center-da-nang</cd:url>
+<cd:name>Hệ thống Gà Rán Jollibee - Đà Nẵng</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g15/147984/prof/s640x400/foody-mobile-5-jpg-509-636341508490308948.jpg</cd:image>
+<cd:id>028</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/beefsteak-51-mai-hac-de</cd:url>
+<cd:name>Beefsteak 51 - Mai Hắc Đế</cd:name>
+<cd:rating>7.8</cd:rating>
+<cd:image>https://images.foody.vn/res/g5/43303/prof/s640x400/foody-mobile-la2-jpg-294-636125535213002918.jpg</cd:image>
+<cd:id>029</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ga-ran-kfc-nguyen-van-linh</cd:url>
+<cd:name>Hệ thống Gà Rán KFC - Miền Trung</cd:name>
+<cd:rating>7.2</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8502/prof/s640x400/foody-upload-api-foody-mobile-fkc-jpg-180601094259.jpg</cd:image>
+<cd:id>030</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/magic-pan-food-palace-vincom-center-da-nang</cd:url>
+<cd:name>Magic Pan Food Palace - Vincom Center Đà Nẵng</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g15/147562/prof/s640x400/foody-mobile-foody-magic-pan-food-787-635882919166484240.jpg</cd:image>
+<cd:id>031</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/pizza-74</cd:url>
+<cd:name>Pizza 74</cd:name>
+<cd:rating>7.4</cd:rating>
+<cd:image>https://images.foody.vn/res/g2/13017/prof/s640x400/foody-mobile-foody-pizza-om-74-tr-127-635895047925033890.jpg</cd:image>
+<cd:id>032</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/runam-cafe</cd:url>
+<cd:name>Runam Bistro - Bạch Đằng</cd:name>
+<cd:rating>7.4</cd:rating>
+<cd:image>https://images.foody.vn/res/g20/196028/prof/s640x400/foody-upload-api-foody-mobile-10-jpg-181105164736.jpg</cd:image>
+<cd:id>033</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/the-sushi-bar-thien-que</cd:url>
+<cd:name>The Sushi Bar - Thiên Quế</cd:name>
+<cd:rating>7.8</cd:rating>
+<cd:image>https://images.foody.vn/res/g15/148365/prof/s640x400/foody-mobile-sashimi_600x384-1050-856-635768973265857441.jpg</cd:image>
+<cd:id>034</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/suon-nuong-cao-boi</cd:url>
+<cd:name>Sườn Nướng Cao Bồi</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g21/204072/prof/s640x400/foody-mobile-foody-suon-nuong-cao-945-635933011572191108.jpg</cd:image>
+<cd:id>035</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/thit-tot-restaurant</cd:url>
+<cd:name>Thịt Tốt Restaurant</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/88275/prof/s640x400/foody-mobile-foody-checkin-thit-t-826-635840423605594315.jpg</cd:image>
+<cd:id>036</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/madame-lan</cd:url>
+<cd:name>Madame Lân - Ẩm Thực VIệt</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/6259/prof/s640x400/foody-upload-api-foody-mobile-madame-lan-am-thuc-v-180620151547.jpg</cd:image>
+<cd:id>037</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bella-pizza</cd:url>
+<cd:name>Hệ thống Bella Pizza</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g27/269547/prof/s640x400/foody-mobile-bell-jpg-550-636138680304265862.jpg</cd:image>
+<cd:id>038</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/my-thai-restaurant-am-thuc-thai</cd:url>
+<cd:name>My Thái Restaurant - Ẩm Thực Thái</cd:name>
+<cd:rating>8.1</cd:rating>
+<cd:image>https://images.foody.vn/res/g66/658216/prof/s640x400/foody-mobile-myth-jpg-641-636332292467972129.jpg</cd:image>
+<cd:id>039</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/truc-lam-vien-cafe-restaurant</cd:url>
+<cd:name>Hệ thống Trúc Lâm Viên</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/3232/prof/s640x400/foody-mobile-truc-lam-vien-mb-jpg-940-635784535242864353.jpg</cd:image>
+<cd:id>040</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/nuong-da-thanh</cd:url>
+<cd:name>Nướng Đà Thành - BBQ</cd:name>
+<cd:rating>2.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g8/72518/prof/s640x400/foody-mobile-album-ngay-25-9-9-jp-747-635787978453521375.jpg</cd:image>
+<cd:id>041</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/palmier-cafe-restaurant</cd:url>
+<cd:name>Palmier Café &amp; Restaurant</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g28/275157/prof/s640x400/foody-upload-api-foody-mobile-cafe-jpg-181210173358.jpg</cd:image>
+<cd:id>042</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/liu-chu-fang-buffet-lau-dimsum-hong-kong</cd:url>
+<cd:name>Liu Chu Fang - Buffet Lẩu &amp; Dimsum Hồng Kông</cd:name>
+<cd:rating>6.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g68/675365/prof/s640x400/foody-upload-api-foody-mobile-liu-chu-fang-buffet--180620144447.jpg</cd:image>
+<cd:id>043</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/nha-hang-bin</cd:url>
+<cd:name>Bin Restaurant - Bánh Donut &amp; Gà Nướng</cd:name>
+<cd:rating>7.4</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/6725/prof/s640x400/foody-mobile-binee-jpg-222-636137632259652645.jpg</cd:image>
+<cd:id>044</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/food-market-restaurant-mon-viet</cd:url>
+<cd:name>Korean Street Food - Ẩm Thực Đường Phố Hàn Quốc</cd:name>
+<cd:rating>7.4</cd:rating>
+<cd:image>https://images.foody.vn/res/g32/314513/prof/s640x400/foody-mobile-hquoc-jpg-699-636318462927719198.jpg</cd:image>
+<cd:id>045</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/thai-market-thai-phien</cd:url>
+<cd:name>Hệ thống Thai Market</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g31/300040/prof/s640x400/foody-upload-api-foody-mobile-thaim-jpg-180510171612.jpg</cd:image>
+<cd:id>046</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/phi-lu-1</cd:url>
+<cd:name>Phì Lũ 1</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/3233/prof/s640x400/foody-upload-api-foody-mobile-phi-lu-1-jpg-180620093908.jpg</cd:image>
+<cd:id>047</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/xeo-fry-grill</cd:url>
+<cd:name>Hệ thống Ẩm Thực XÈO</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg</cd:image>
+<cd:id>048</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/mr-pizza-nguyen-chi-thanh</cd:url>
+<cd:name>Mr. Pizza - Nguyễn Chí Thanh</cd:name>
+<cd:rating>7.1</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg</cd:image>
+<cd:id>049</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ecstasy-restaurant-am-thuc-3-mien</cd:url>
+<cd:name>Ecstasy Restaurant - Ẩm Thực 3 Miền</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg</cd:image>
+<cd:id>050</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/michi-sushi-nguyen-van-linh</cd:url>
+<cd:name>Michi Sushi - Nguyễn Văn Linh</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg</cd:image>
+<cd:id>051</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dong-duong-am-thuc-viet</cd:url>
+<cd:name>Đông Dương - Ẩm Thực Việt</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg</cd:image>
+<cd:id>052</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
+<cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
+<cd:id>053</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/luna-pub-tran-phu</cd:url>
+<cd:name>Luna Pub - Trần Phú</cd:name>
+<cd:rating>7.4</cd:rating>
+<cd:image>https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg</cd:image>
+<cd:id>054</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bbq-un-in-suon-heo-xong-khoi</cd:url>
+<cd:name>BBQ Ủn Ỉn - Sườn Heo Xông Khói</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg</cd:image>
+<cd:id>055</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dae-jang-geum-nha-hang-han-quoc</cd:url>
+<cd:name>Dae Jang Geum - Nhà Hàng Hàn Quốc</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg</cd:image>
+<cd:id>056</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ot-xanh-restaurant</cd:url>
+<cd:name>Ớt Xanh Restaurant</cd:name>
+<cd:rating>7.0</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg</cd:image>
+<cd:id>057</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/yuk-hae-gong</cd:url>
+<cd:name>Yuk Hae Gong - BBQ Hàn Quốc</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg</cd:image>
+<cd:id>058</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bread-of-life</cd:url>
+<cd:name>Bread of Life</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg</cd:image>
+<cd:id>059</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/xeo-fry-grill</cd:url>
+<cd:name>Hệ thống Ẩm Thực XÈO</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg</cd:image>
+<cd:id>060</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/mr-pizza-nguyen-chi-thanh</cd:url>
+<cd:name>Mr. Pizza - Nguyễn Chí Thanh</cd:name>
+<cd:rating>7.1</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg</cd:image>
+<cd:id>061</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ecstasy-restaurant-am-thuc-3-mien</cd:url>
+<cd:name>Ecstasy Restaurant - Ẩm Thực 3 Miền</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg</cd:image>
+<cd:id>062</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/michi-sushi-nguyen-van-linh</cd:url>
+<cd:name>Michi Sushi - Nguyễn Văn Linh</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg</cd:image>
+<cd:id>063</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dong-duong-am-thuc-viet</cd:url>
+<cd:name>Đông Dương - Ẩm Thực Việt</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg</cd:image>
+<cd:id>064</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
+<cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
+<cd:id>065</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/luna-pub-tran-phu</cd:url>
+<cd:name>Luna Pub - Trần Phú</cd:name>
+<cd:rating>7.4</cd:rating>
+<cd:image>https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg</cd:image>
+<cd:id>066</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bbq-un-in-suon-heo-xong-khoi</cd:url>
+<cd:name>BBQ Ủn Ỉn - Sườn Heo Xông Khói</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg</cd:image>
+<cd:id>067</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dae-jang-geum-nha-hang-han-quoc</cd:url>
+<cd:name>Dae Jang Geum - Nhà Hàng Hàn Quốc</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg</cd:image>
+<cd:id>068</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ot-xanh-restaurant</cd:url>
+<cd:name>Ớt Xanh Restaurant</cd:name>
+<cd:rating>7.0</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg</cd:image>
+<cd:id>069</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/yuk-hae-gong</cd:url>
+<cd:name>Yuk Hae Gong - BBQ Hàn Quốc</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg</cd:image>
+<cd:id>070</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bread-of-life</cd:url>
+<cd:name>Bread of Life</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg</cd:image>
+<cd:id>071</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/xeo-fry-grill</cd:url>
+<cd:name>Hệ thống Ẩm Thực XÈO</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg</cd:image>
+<cd:id>072</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/mr-pizza-nguyen-chi-thanh</cd:url>
+<cd:name>Mr. Pizza - Nguyễn Chí Thanh</cd:name>
+<cd:rating>7.1</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg</cd:image>
+<cd:id>073</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ecstasy-restaurant-am-thuc-3-mien</cd:url>
+<cd:name>Ecstasy Restaurant - Ẩm Thực 3 Miền</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg</cd:image>
+<cd:id>074</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/michi-sushi-nguyen-van-linh</cd:url>
+<cd:name>Michi Sushi - Nguyễn Văn Linh</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg</cd:image>
+<cd:id>075</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dong-duong-am-thuc-viet</cd:url>
+<cd:name>Đông Dương - Ẩm Thực Việt</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg</cd:image>
+<cd:id>076</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
+<cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
+<cd:id>077</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/luna-pub-tran-phu</cd:url>
+<cd:name>Luna Pub - Trần Phú</cd:name>
+<cd:rating>7.4</cd:rating>
+<cd:image>https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg</cd:image>
+<cd:id>078</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bbq-un-in-suon-heo-xong-khoi</cd:url>
+<cd:name>BBQ Ủn Ỉn - Sườn Heo Xông Khói</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg</cd:image>
+<cd:id>079</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dae-jang-geum-nha-hang-han-quoc</cd:url>
+<cd:name>Dae Jang Geum - Nhà Hàng Hàn Quốc</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg</cd:image>
+<cd:id>080</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ot-xanh-restaurant</cd:url>
+<cd:name>Ớt Xanh Restaurant</cd:name>
+<cd:rating>7.0</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg</cd:image>
+<cd:id>081</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/yuk-hae-gong</cd:url>
+<cd:name>Yuk Hae Gong - BBQ Hàn Quốc</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg</cd:image>
+<cd:id>082</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bread-of-life</cd:url>
+<cd:name>Bread of Life</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg</cd:image>
+<cd:id>083</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/xeo-fry-grill</cd:url>
+<cd:name>Hệ thống Ẩm Thực XÈO</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg</cd:image>
+<cd:id>084</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/mr-pizza-nguyen-chi-thanh</cd:url>
+<cd:name>Mr. Pizza - Nguyễn Chí Thanh</cd:name>
+<cd:rating>7.1</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg</cd:image>
+<cd:id>085</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ecstasy-restaurant-am-thuc-3-mien</cd:url>
+<cd:name>Ecstasy Restaurant - Ẩm Thực 3 Miền</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg</cd:image>
+<cd:id>086</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/michi-sushi-nguyen-van-linh</cd:url>
+<cd:name>Michi Sushi - Nguyễn Văn Linh</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg</cd:image>
+<cd:id>087</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dong-duong-am-thuc-viet</cd:url>
+<cd:name>Đông Dương - Ẩm Thực Việt</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg</cd:image>
+<cd:id>088</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
+<cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
+<cd:id>089</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/luna-pub-tran-phu</cd:url>
+<cd:name>Luna Pub - Trần Phú</cd:name>
+<cd:rating>7.4</cd:rating>
+<cd:image>https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg</cd:image>
+<cd:id>090</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bbq-un-in-suon-heo-xong-khoi</cd:url>
+<cd:name>BBQ Ủn Ỉn - Sườn Heo Xông Khói</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg</cd:image>
+<cd:id>091</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dae-jang-geum-nha-hang-han-quoc</cd:url>
+<cd:name>Dae Jang Geum - Nhà Hàng Hàn Quốc</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg</cd:image>
+<cd:id>092</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ot-xanh-restaurant</cd:url>
+<cd:name>Ớt Xanh Restaurant</cd:name>
+<cd:rating>7.0</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg</cd:image>
+<cd:id>093</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/yuk-hae-gong</cd:url>
+<cd:name>Yuk Hae Gong - BBQ Hàn Quốc</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg</cd:image>
+<cd:id>094</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bread-of-life</cd:url>
+<cd:name>Bread of Life</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg</cd:image>
+<cd:id>095</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/xeo-fry-grill</cd:url>
+<cd:name>Hệ thống Ẩm Thực XÈO</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg</cd:image>
+<cd:id>096</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/mr-pizza-nguyen-chi-thanh</cd:url>
+<cd:name>Mr. Pizza - Nguyễn Chí Thanh</cd:name>
+<cd:rating>7.1</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg</cd:image>
+<cd:id>097</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ecstasy-restaurant-am-thuc-3-mien</cd:url>
+<cd:name>Ecstasy Restaurant - Ẩm Thực 3 Miền</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg</cd:image>
+<cd:id>098</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/michi-sushi-nguyen-van-linh</cd:url>
+<cd:name>Michi Sushi - Nguyễn Văn Linh</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg</cd:image>
+<cd:id>099</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dong-duong-am-thuc-viet</cd:url>
+<cd:name>Đông Dương - Ẩm Thực Việt</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg</cd:image>
+<cd:id>100</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
+<cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
+<cd:rating>7.9</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
+<cd:id>101</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/luna-pub-tran-phu</cd:url>
+<cd:name>Luna Pub - Trần Phú</cd:name>
+<cd:rating>7.4</cd:rating>
+<cd:image>https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg</cd:image>
+<cd:id>102</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bbq-un-in-suon-heo-xong-khoi</cd:url>
+<cd:name>BBQ Ủn Ỉn - Sườn Heo Xông Khói</cd:name>
+<cd:rating>7.7</cd:rating>
+<cd:image>https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg</cd:image>
+<cd:id>103</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/dae-jang-geum-nha-hang-han-quoc</cd:url>
+<cd:name>Dae Jang Geum - Nhà Hàng Hàn Quốc</cd:name>
+<cd:rating>7.3</cd:rating>
+<cd:image>https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg</cd:image>
+<cd:id>104</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/ot-xanh-restaurant</cd:url>
+<cd:name>Ớt Xanh Restaurant</cd:name>
+<cd:rating>7.0</cd:rating>
+<cd:image>https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg</cd:image>
+<cd:id>105</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/yuk-hae-gong</cd:url>
+<cd:name>Yuk Hae Gong - BBQ Hàn Quốc</cd:name>
+<cd:rating>7.5</cd:rating>
+<cd:image>https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg</cd:image>
+<cd:id>106</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/bread-of-life</cd:url>
+<cd:name>Bread of Life</cd:name>
+<cd:rating>7.6</cd:rating>
+<cd:image>https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg</cd:image>
+<cd:id>107</cd:id>
+</rdf:Description>
+</rdf:RDF>

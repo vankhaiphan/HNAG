@@ -69,10 +69,21 @@ def posts():
     # return jsonify(dt)
     g = rdflib.Graph()
     g = g.parse("data.xml", format="xml")
-    statement = 'SELECT ?id ?name ?url ?rating ?image WHERE {?place cd:name ?name. ?place cd:url ?url. ?place cd:rating ?rating. ?place cd:image ?image. ?place cd:id ?id. FILTER (?id >= '+str(start)+'). FILTER (?id < '+str(end)+')}'
-    result = g.query(statement)
+
+    result = g.query("""
+        SELECT DISTINCT ?name ?url ?rating ?image ?id
+        WHERE {
+            ?place cd:name ?name.
+            ?place cd:url ?url.
+            ?place cd:rating ?rating.
+            ?place cd:image ?image.
+            ?place cd:id ?id.
+        } 
+        
+        ORDER BY (?id)
+        LIMIT 12""")
     for row in result:
-        print(row.name.toPython())
+        print(row.id.toPython())
         lJson = {
             "url": row.url.toPython(),
             "name": row.name.toPython(),
