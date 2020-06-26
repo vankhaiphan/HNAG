@@ -32,7 +32,7 @@
 <cd:id>004</cd:id>
 </rdf:Description>
 <rdf:Description><cd:url>/da-nang/al-fresco-s-pizza-my-y-suon-steak-bo-bit-tet-tran-phu</cd:url>
-<cd:name>Al Fresco's - Pizza, Mỳ Ý, Sườn, Steak Bò Bít Tết - Trần Phú</cd:name>
+<cd:name>Hệ thống Al Fresco’s Pizza Mỳ Ý Sườn Steak Bò Bít Tết - Đà Nẵng</cd:name>
 <cd:rating>7.9</cd:rating>
 <cd:image>https://images.foody.vn/res/g4/36228/prof/s640x400/foody-upload-api-foody-mobile-2018122511624-4-sant-190102083757.jpg</cd:image>
 <cd:id>005</cd:id>
@@ -201,7 +201,7 @@
 </rdf:Description>
 <rdf:Description><cd:url>/da-nang/runam-cafe</cd:url>
 <cd:name>Runam Bistro - Bạch Đằng</cd:name>
-<cd:rating>7.5</cd:rating>
+<cd:rating>7.4</cd:rating>
 <cd:image>https://images.foody.vn/res/g20/196028/prof/s640x400/foody-upload-api-foody-mobile-10-jpg-181105164736.jpg</cd:image>
 <cd:id>033</cd:id>
 </rdf:Description>
@@ -229,16 +229,16 @@
 <cd:image>https://images.foody.vn/res/g1/6259/prof/s640x400/foody-upload-api-foody-mobile-madame-lan-am-thuc-v-180620151547.jpg</cd:image>
 <cd:id>037</cd:id>
 </rdf:Description>
-<rdf:Description><cd:url>/da-nang/my-thai-restaurant-am-thuc-thai</cd:url>
-<cd:name>My Thái Restaurant - Ẩm Thực Thái</cd:name>
-<cd:rating>8.1</cd:rating>
-<cd:image>https://images.foody.vn/res/g66/658216/prof/s640x400/foody-mobile-myth-jpg-641-636332292467972129.jpg</cd:image>
-<cd:id>038</cd:id>
-</rdf:Description>
 <rdf:Description><cd:url>/da-nang/bella-pizza</cd:url>
 <cd:name>Hệ thống Bella Pizza</cd:name>
 <cd:rating>7.7</cd:rating>
 <cd:image>https://images.foody.vn/res/g27/269547/prof/s640x400/foody-mobile-bell-jpg-550-636138680304265862.jpg</cd:image>
+<cd:id>038</cd:id>
+</rdf:Description>
+<rdf:Description><cd:url>/da-nang/my-thai-restaurant-am-thuc-thai</cd:url>
+<cd:name>My Thái Restaurant - Ẩm Thực Thái</cd:name>
+<cd:rating>8.1</cd:rating>
+<cd:image>https://images.foody.vn/res/g66/658216/prof/s640x400/foody-mobile-myth-jpg-641-636332292467972129.jpg</cd:image>
 <cd:id>039</cd:id>
 </rdf:Description>
 <rdf:Description><cd:url>/da-nang/truc-lam-vien-cafe-restaurant</cd:url>
@@ -321,7 +321,7 @@
 </rdf:Description>
 <rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
 <cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
-<cd:rating>7.8</cd:rating>
+<cd:rating>7.9</cd:rating>
 <cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
 <cd:id>053</cd:id>
 </rdf:Description>
@@ -393,7 +393,7 @@
 </rdf:Description>
 <rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
 <cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
-<cd:rating>7.8</cd:rating>
+<cd:rating>7.9</cd:rating>
 <cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
 <cd:id>065</cd:id>
 </rdf:Description>
@@ -465,7 +465,7 @@
 </rdf:Description>
 <rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
 <cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
-<cd:rating>7.8</cd:rating>
+<cd:rating>7.9</cd:rating>
 <cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
 <cd:id>077</cd:id>
 </rdf:Description>
@@ -537,7 +537,7 @@
 </rdf:Description>
 <rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
 <cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
-<cd:rating>7.8</cd:rating>
+<cd:rating>7.9</cd:rating>
 <cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
 <cd:id>089</cd:id>
 </rdf:Description>
@@ -609,7 +609,7 @@
 </rdf:Description>
 <rdf:Description><cd:url>/da-nang/de-nghia-2-he-thong-de-da-nang</cd:url>
 <cd:name>Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng</cd:name>
-<cd:rating>7.8</cd:rating>
+<cd:rating>7.9</cd:rating>
 <cd:image>https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg</cd:image>
 <cd:id>101</cd:id>
 </rdf:Description>
