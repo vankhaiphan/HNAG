@@ -31,13 +31,10 @@ def logout_view(request):
 
 def posts(request):
     # Get start and end point for posts to generate.
-    start = int(request.GET.get("start") or 0)
-    end = int(request.GET.get("end") or (start + 9))
+    start = str(int(request.GET.get("start") or 0)).zfill(3)
+    end = str(int(request.GET.get("end") or (start + 9))).zfill(3)
 
     # Generate list of posts.
-    # lname = []
-    # lrating = []
-    # limage = []
     dt = []
     # data = pd.read_csv('hnag/data.csv', sep=',')
     # for i in range(start, end + 1):   
@@ -69,9 +66,11 @@ def posts(request):
             ?place cd:rating ?rating.
             ?place cd:image ?image.
             ?place cd:id ?id.
+            FILTER (?id >= """ + """'""" + start + """')
+            FILTER (?id <= """ + """'""" + end + """')
         } 
         ORDER BY (?id)
-        LIMIT 12""")
+        """)
     for row in result:
         print(row.id.toPython())
         lJson = {
@@ -83,4 +82,10 @@ def posts(request):
         dt.append(lJson)
     return JsonResponse({
         "posts": dt
+    })
+
+def search(request):
+    search = str(request.GET.get("search"))
+    return JsonResponse({
+        "data": []
     })
