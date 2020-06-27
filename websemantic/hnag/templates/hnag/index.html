@@ -105,11 +105,21 @@
 				// document.querySelector('#cardpost').append(document.createElement('br'));
 			};
 			
-			document.getElementById('bt-search').addEventListener('click', () => {
-				const content = document.getElementById('search').innerHTML;
-				document.querySelector('#test').append(content);
-				// fetch(`/timkiem?search=${content}`)
-			})
+			function Search(){
+				const content = document.getElementById("search").value;
+				// document.getElementById('test').append(content);
+				var list = document.getElementById('cardpost');
+				while (list.hasChildNodes())
+				{
+					list.removeChild(list.firstChild);
+				}
+				fetch(`/search?search=${content}`)
+				.then(response => response.json())
+				.then(data => {
+					document.querySelector('#cardpost').value = null;
+					data.posts.forEach(add_post);
+				})
+			}
 						
 		</script>
 	</head>
@@ -121,18 +131,21 @@
 					<img src="{% static 'hnag/img/avatar.png' %}" style="height: 30px; border-right: 0.5px solid #333333;" class="pr-2" alt="">
 					<div class="pl-2">Hôm nay ăn gì?</div>
 				</a>									  
-				<!-- <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}"> -->
 				<form class="form-inline my-2 my-lg-0">
+				<!-- <form action="{% url 'search' %}" class="form-inline my-2 my-lg-0"> -->
 					<!-- {% csrf_token %} -->
 					<input id="search"class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
-					<button id="bt-search" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+					<button id="bt-search" class="btn btn-outline-primary my-2 my-sm-0" type="button" onclick="Search();">Search</button>
 				</form>
 				<form action="{% url 'logout' %}">					
 					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Log out</button>						
 				</form>
 			</nav>
 			<div>Currently logged in as: {{ user.username }}</div>
-			<div id="test">...</div>	
+			<!-- <div id="tes">
+				<p>Hello</p>
+				<div id="test"></div>
+			</div>	 -->
 			<div style="background-color: #f8f9fa;">
 				<nav class="navbar navbar-light bg-light">
 					<ul class="nav nav-tabs">

@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
 from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import render
 from django.urls import reverse
@@ -8,6 +9,8 @@ import rdflib
 
 # Create your views here.
 def index(request):
+    # List all user
+    # print(User.objects.all())
     if not request.user.is_authenticated:
         return render(request, "hnag/login.html", {"message": None})
     context = {
@@ -86,6 +89,35 @@ def posts(request):
 
 def search(request):
     search = str(request.GET.get("search"))
+    # print(search)
+    # return JsonResponse({
+    #     "data": []
+    # })
+    dt = []
+    g = rdflib.Graph()
+    g = g.parse("hnag/static/hnag/data.xml", format="xml")
+
+    result = g.query("""
+        SELECT DISTINCT ?name ?url ?rating ?image ?id
+        WHERE {
+            ?place cd:name ?name.
+            ?place cd:url ?url.
+            ?place cd:rating ?rating.
+            ?place cd:image ?image.
+            ?place cd:id ?id.
+            FILTER regex(?name,""" + """'""" + search + """')            
+        } 
+        ORDER BY (?id)
+        """)
+    for row in result:
+        print(row.id.toPython())
+        lJson = {
+            "url": row.url.toPython(),
+            "name": row.name.toPython(),
+            "rate": row.rating.toPython(),
+            "image": row.image.toPython()
+        }
+        dt.append(lJson)
     return JsonResponse({
-        "data": []
+        "posts": dt
     })
