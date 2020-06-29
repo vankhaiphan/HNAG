@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:res="http://www.hnag.com/"
+>
+  <rdf:Description rdf:about="10">
+    <res:address>234 Phan Châu Trinh</res:address>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.6</res:rating>
+    <res:url>/da-nang/koko-green-kafe</res:url>
+    <res:name>KoKo Green Kafe</res:name>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</res:id>
+    <res:image>https://images.foody.vn/res/g30/292251/prof/s640x400/foody-upload-api-foody-mobile-koko-green-kafe-jpg-180620103013.jpg</res:image>
+  </rdf:Description>
+  <rdf:Description rdf:about="4">
+    <res:image>https://images.foody.vn/res/g5/41178/prof/s640x400/foody-mobile-xien-que-sushi-jpg-306-635883649490025589.jpg</res:image>
+    <res:name>Xiên Que - Nguyễn Thị Minh Khai</res:name>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</res:id>
+    <res:url>/da-nang/xien-que-nguyen-thi-minh-khai</res:url>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.3</res:rating>
+    <res:address>138 Nguyễn Thị Minh Khai</res:address>
+  </rdf:Description>
+  <rdf:Description rdf:about="6">
+    <res:image>https://images.foody.vn/res/g22/214989/prof/s640x400/foody-upload-api-foody-mobile-15-190319145437.jpg</res:image>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.5</res:rating>
+    <res:url>/da-nang/pho-nuong-tokyo</res:url>
+    <res:name>Phố Nướng Tokyo</res:name>
+    <res:address>4 Phạm Văn Đồng</res:address>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</res:id>
+  </rdf:Description>
+  <rdf:Description rdf:about="11">
+    <res:name>Snow Pizza</res:name>
+    <res:address>134 Phan Đăng Lưu</res:address>
+    <res:url>/da-nang/snow-pizza</res:url>
+    <res:image>https://images.foody.vn/res/g18/170341/prof/s640x400/foody-mobile-sn-jpg-583-636397115846551906.jpg</res:image>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</res:id>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.9</res:rating>
+  </rdf:Description>
+  <rdf:Description rdf:about="1">
+    <res:url>/da-nang/pizza-hut-le-duan</res:url>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.2</res:rating>
+    <res:address>3 chi nhánh</res:address>
+    <res:image>https://images.foody.vn/res/g2/18678/prof/s640x400/foody-upload-api-foody-mobile-2-190620163026.jpg</res:image>
+    <res:name>Hệ thống Pizza Hut - Đà Nẵng</res:name>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</res:id>
+  </rdf:Description>
+  <rdf:Description rdf:about="2">
+    <res:url>/da-nang/han-cook-cafe-food</res:url>
+    <res:address>2 chi nhánh</res:address>
+    <res:image>https://images.foody.vn/res/g20/190802/prof/s640x400/foody-upload-api-foody-mobile-hancook-jpg-190103100855.jpg</res:image>
+    <res:name>Hệ thống Hancook</res:name>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.8</res:rating>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</res:id>
+  </rdf:Description>
+  <rdf:Description rdf:about="7">
+    <res:address>2 chi nhánh</res:address>
+    <res:name>Hệ thống PapaSteak</res:name>
+    <res:image>https://images.foody.vn/res/g16/159179/prof/s640x400/foody-upload-api-foody-mobile-8ddafa3b-63f6-4ce6-a-200221133053.jpg</res:image>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</res:id>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.6</res:rating>
+    <res:url>/da-nang/papasteak-152-phan-thanh</res:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="0">
+    <res:name>Hệ thống Gogi House - Quán Nướng Hàn Quốc - ĐN</res:name>
+    <res:url>/da-nang/gogi-house-quan-nuong-han-quoc-vincom-center-da-nang</res:url>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.6</res:rating>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</res:id>
+    <res:address>4 chi nhánh</res:address>
+    <res:image>https://images.foody.vn/res/g15/147556/prof/s640x400/foody-mobile-gogi-house-dn1-mb-jp-611-635787900703764814.jpg</res:image>
+  </rdf:Description>
+  <rdf:Description rdf:about="9">
+    <res:url>/da-nang/faifo-grill-buffet-restaurant</res:url>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</res:id>
+    <res:name>Hệ thống Faifo Grill &amp; Buffet Restaurant</res:name>
+    <res:image>https://images.foody.vn/res/g18/170016/prof/s640x400/foody-upload-api-foody-mobile-faifo-jpg-181221150818.jpg</res:image>
+    <res:address>2 chi nhánh</res:address>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.6</res:rating>
+  </rdf:Description>
+  <rdf:Description rdf:about="5">
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</res:id>
+    <res:address>210 Trần Phú</res:address>
+    <res:image>https://images.foody.vn/res/g4/36228/prof/s640x400/foody-upload-api-foody-mobile-2018122511624-4-sant-190102083757.jpg</res:image>
+    <res:url>/da-nang/al-fresco-s-pizza-my-y-suon-steak-bo-bit-tet-tran-phu</res:url>
+    <res:name>Al Fresco's - Pizza, Mỳ Ý, Sườn, Steak Bò Bít Tết - Trần Phú</res:name>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.9</res:rating>
+  </rdf:Description>
+  <rdf:Description rdf:about="3">
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</res:id>
+    <res:name>Hệ thống Quán Trần - Đặc Sản Đà Nẵng</res:name>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.7</res:rating>
+    <res:image>https://images.foody.vn/res/g1/150/prof/s640x400/foody-mobile--bba8d83926e3bf1c989-524-635931405901928196.jpg</res:image>
+    <res:url>/da-nang/banh-trang-thit-heo-tran-le-duan</res:url>
+    <res:address>6 chi nhánh</res:address>
+  </rdf:Description>
+  <rdf:Description rdf:about="8">
+    <res:url>/da-nang/cuisine-de-vin</res:url>
+    <res:name>Cuisine De Vin - Bếp Nhà Vin</res:name>
+    <res:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</res:id>
+    <res:rating rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.9</res:rating>
+    <res:image>https://images.foody.vn/res/g12/115342/prof/s640x400/foody-mobile-vin-22-jpg-536-635984020478644129.jpg</res:image>
+    <res:address>176 Nguyễn Chí Thanh</res:address>
+  </rdf:Description>
+</rdf:RDF>
