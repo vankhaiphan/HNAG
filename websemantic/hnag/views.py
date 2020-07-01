@@ -92,18 +92,20 @@ def search(request):
     search = str(request.GET.get("search"))
     # print(search)
     rs = chunk(search)
+    print(rs)
     mon = []
     duong = []
     checkduong = ['Đường', 'đường']
     for i in range(len(rs)):
-        if rs[i][1] == 'Np' and rs[i-1][0] in checkduong:
+        if rs[i][1] in ['Np','N','M'] and rs[i-1][0] in checkduong:
             duong.append(rs[i][0])
-        if rs[i][1] == 'Np' and str(rs[i-1][0]).isnumeric():
+        elif rs[i][1] in ['Np','N','M'] and str(rs[i-1][0]).isnumeric():
             soduong = rs[i-1][0] + " " + rs[i][0]
             duong.append(soduong)
         elif rs[i][1] == 'Np':
             mon.append(rs[i][0])    
-    # print("Mon:",mon[0])
+    print("Đường: ",duong)
+    print("Món: ", mon)
     # return JsonResponse({
     #     "data": []
     # })
@@ -111,27 +113,42 @@ def search(request):
     g = rdflib.Graph()
     g = g.parse("hnag/static/hnag/restaurants.xml", format="xml")
     
-    if (len(duong) == 0):        
-        result = g.query("""
-            SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
-            WHERE {
-                ?place res:name ?name.
-                ?place res:address ?address.
-                ?place res:url ?url.
-                ?place res:rating ?rating.
-                ?place res:image ?image.
-                ?place res:id ?id.
-                FILTER regex(?name,""" + """'""" + search + """','i').            
-            } 
-            ORDER BY (?id)
-            """)        
+    if (len(duong) == 0):  
+        if (len(mon) == 0):      
+            result = g.query("""
+                SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
+                WHERE {
+                    ?place res:name ?name.
+                    ?place res:address ?address.
+                    ?place res:url ?url.
+                    ?place res:rating ?rating.
+                    ?place res:image ?image.
+                    ?place res:id ?id.
+                    FILTER regex(?name,""" + """'""" + search + """','i').            
+                } 
+                ORDER BY (?id)
+                """)
+        else:
+            result = g.query("""
+                SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
+                WHERE {
+                    ?place res:name ?name.
+                    ?place res:address ?address.
+                    ?place res:url ?url.
+                    ?place res:rating ?rating.
+                    ?place res:image ?image.
+                    ?place res:id ?id.
+                    FILTER regex(?name,""" + """'""" + mon[0] + """','i').            
+                } 
+                ORDER BY (?id)
+                """)
     else:
         regex = """"""
         for i in range(len(mon)):
             regex += """FILTER regex(?name,""" + """'""" + mon[i] + """','i')."""
         for i in range(len(duong)):
             regex += """FILTER regex(?address,""" + """'""" + duong[i] + """','i')."""
-        # print(regex)
+        print(regex)
         result = g.query("""
             SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
             WHERE {
