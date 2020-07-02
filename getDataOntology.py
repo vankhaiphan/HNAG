@@ -1,3 +1,6 @@
+#install graphDB - graph database extended from RDF4J
+#install SPARQLWrapper to wrap SPARQL Endpoint
+
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -5,14 +8,11 @@ from ftfy import fix_encoding
 from rdflib import URIRef, BNode, Literal, Graph, Namespace
 from rdflib.namespace import RDF, FOAF
 from SPARQLWrapper import SPARQLWrapper, JSON
-# Adding to JSON 
-# def add_json(data, filename='data.json'): 
-#     with open(filename,'w') as f: 
-#         json.dump(data, f, indent=4)   
   
-sparql = SPARQLWrapper("http://localhost:7200/repositories/HNAG/statements")
+sparql = SPARQLWrapper("http://localhost:7200/repositories/HNAG/statements") #connect to database
 customNamespace = Namespace("http://www.hnag.com/")
 
+#add nodes of districts to the graph
 def addCityAndDistricts():
     districtNames = ['Hải Châu', 'Cẩm Lệ', 'Hoà Vang', 'Liên Chiểu', 'Ngũ Hành Sơn', 'Sơn Trà', 'Thanh Khê', 'Hoàng Sa']
     districtId = ['hai-chau', 'cam-le', 'hoa-vang', 'lien-chieu', 'ngu-hanh-son', 'son-tra', 'thanh-khe', 'hoang-sa']
@@ -37,8 +37,9 @@ def addCityAndDistricts():
         sparql.method = 'POST'        
         sparql.query()
 
+#add nodes of places to the graph
 def addPlaces():
-    for j in range(1,2):
+    for j in range(1,10):
         url = "https://www.foody.vn/da-nang/nha-hang?page=" + str(j) + "#!#page" + str(j)
         page = requests.get(url)
         soup = BeautifulSoup(page.text, 'html.parser')
@@ -64,6 +65,7 @@ def addPlaces():
             # sAddress = sAddress.split(", ")[1]
             id = str((j-1)*12+i)
 
+            #insert node of a place with addres is a blank node
             queryString = '''
                 PREFIX res:<http://www.hnag.com/>
                 INSERT DATA {
@@ -75,12 +77,12 @@ def addPlaces():
                                         res:id '''+id+''' . 
                 }
             '''
-            # print(queryString)
             sparql.setQuery(queryString)
             sparql.method = 'POST'
             sparql.query()
 
             addressDetails = addresses[i].findAll('span')
+            #if the address is exist then insert details to the graph
             if (len(addressDetails) > 3):
                 street = addressDetails[1].text
                 district = addressDetails[2].text
@@ -88,6 +90,7 @@ def addPlaces():
                 city = addressDetails[3].text
                 insertAddress(id, street, district, city)
 
+#insert address details to graph
 def insertAddress(id, street, district, city):
     queryString = '''
         PREFIX res:<http://www.hnag.com/>
@@ -103,13 +106,11 @@ def insertAddress(id, street, district, city):
             ?city res:name "'''+city+'''" .
         }
     '''
-    print(queryString)
+
     sparql.setQuery(queryString)
     sparql.method = 'POST'
     sparql.query()
 
-def standardizedAddress(text):
-    return text.replace('\n', '').replace('\r', '').split(", ")[0].strip()
-# test()
+
 addCityAndDistricts()
 addPlaces()

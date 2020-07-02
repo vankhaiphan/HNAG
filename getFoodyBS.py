@@ -6,6 +6,7 @@ from ftfy import fix_encoding
 import xml.etree.ElementTree as ET
 from rdflib import URIRef, BNode, Literal, Graph, Namespace
 from rdflib.namespace import RDF, FOAF
+
 # Adding to JSON 
 # def add_json(data, filename='data.json'): 
 #     with open(filename,'w') as f: 

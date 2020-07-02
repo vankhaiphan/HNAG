@@ -7,7 +7,7 @@ import pandas as pd
 import time
 import rdflib
 from underthesea import chunk
-
+from SPARQLWrapper import SPARQLWrapper, JSON
 # Create your views here.
 def index(request):
     # List all user
@@ -61,6 +61,7 @@ def posts(request):
 
     g = rdflib.Graph()
     g = g.parse("hnag/static/hnag/data.xml", format="xml")
+    # g = SPARQLWrapper("http://localhost:7200/repositories/HNAG/statements")
 
     result = g.query("""
         SELECT DISTINCT ?name ?url ?rating ?image ?id
