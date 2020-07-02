@@ -126,6 +126,8 @@ def search(request):
             ORDER BY (?id)
             """)        
     else:
+        print(mon)
+        print(duong)
         regex = """"""
         for i in range(len(mon)):
             regex += """FILTER regex(?name,""" + """'""" + mon[i] + """','i')."""

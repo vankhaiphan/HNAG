@@ -1,0 +1,22 @@
+@prefix res: <http://www.hnag.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<1> res:address _:N8c66a9ea9e8f4edbaca89e8a06b2f23f ;
+    res:id "0" ;
+    res:image "https://images.foody.vn/res/g15/147556/prof/s640x400/foody-mobile-gogi-house-dn1-mb-jp-611-635787900703764814.jpg" ;
+    res:name "Hệ thống Gogi House - Quán Nướng Hàn Quốc - ĐN" ;
+    res:nearBy <0> ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/gogi-house-quan-nuong-han-quoc-vincom-center-da-nang" .
+
+<0> res:address _:N8c66a9ea9e8f4edbaca89e8a06b2f23f ;
+    res:id "0" ;
+    res:image "https://images.foody.vn/res/g15/147556/prof/s640x400/foody-mobile-gogi-house-dn1-mb-jp-611-635787900703764814.jpg" ;
+    res:name "Hệ thống Gogi House - Quán Nướng Hàn Quốc - ĐN" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/gogi-house-quan-nuong-han-quoc-vincom-center-da-nang" .
+
+_:N8c66a9ea9e8f4edbaca89e8a06b2f23f res:city "Da Nang" ;
+    res:district "39 Nguyen Thanh Y" ;
+    res:street "39 Nguyen Thanh Y" .
+

@@ -15,7 +15,7 @@ customNamespace = Namespace("http://www.hnag.com/")
 graph = Graph()
 graph.bind("res", customNamespace)
 
-for j in range(1,2):
+for j in range(1,10):
     url = "https://www.foody.vn/da-nang/nha-hang?page=" + str(j) + "#!#page" + str(j)
     page = requests.get(url)
     soup = BeautifulSoup(page.text, 'html.parser')
@@ -54,4 +54,4 @@ for j in range(1,2):
         graph.add((place, customNamespace.name, Literal(name)))
         graph.add((place, customNamespace.address, Literal(address)))
         graph.add((place, customNamespace.id, Literal((j-1)*12+i)))    
-graph.serialize(destination='restaurants.xml', format='xml')
+graph.serialize(destination='restaurants.ttl', format='ttl')

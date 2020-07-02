@@ -1,0 +1,759 @@
+@prefix res: <http://www.hnag.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<0> res:address "4 chi nhánh" ;
+    res:id 0 ;
+    res:image "https://images.foody.vn/res/g15/147556/prof/s640x400/foody-mobile-gogi-house-dn1-mb-jp-611-635787900703764814.jpg" ;
+    res:name "Hệ thống Gogi House - Quán Nướng Hàn Quốc - ĐN" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/gogi-house-quan-nuong-han-quoc-vincom-center-da-nang" .
+
+<1> res:address "3 chi nhánh" ;
+    res:id 1 ;
+    res:image "https://images.foody.vn/res/g2/18678/prof/s640x400/foody-upload-api-foody-mobile-2-190620163026.jpg" ;
+    res:name "Hệ thống Pizza Hut - Đà Nẵng" ;
+    res:rating 7.2e+00 ;
+    res:url "/da-nang/pizza-hut-le-duan" .
+
+<10> res:address "234 Phan Châu Trinh" ;
+    res:id 10 ;
+    res:image "https://images.foody.vn/res/g30/292251/prof/s640x400/foody-upload-api-foody-mobile-koko-green-kafe-jpg-180620103013.jpg" ;
+    res:name "KoKo Green Kafe" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/koko-green-kafe" .
+
+<100> res:address "18 Trần Phú" ;
+    res:id 100 ;
+    res:image "https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg" ;
+    res:name "Đông Dương - Ẩm Thực Việt" ;
+    res:rating 7.9e+00 ;
+    res:url "/da-nang/dong-duong-am-thuc-viet" .
+
+<101> res:address "3 chi nhánh" ;
+    res:id 101 ;
+    res:image "https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg" ;
+    res:name "Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/de-nghia-2-he-thong-de-da-nang" .
+
+<102> res:address "9A Trần Phú" ;
+    res:id 102 ;
+    res:image "https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg" ;
+    res:name "Luna Pub - Trần Phú" ;
+    res:rating 7.4e+00 ;
+    res:url "/da-nang/luna-pub-tran-phu" .
+
+<103> res:address "379 Trần Hưng Đạo" ;
+    res:id 103 ;
+    res:image "https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg" ;
+    res:name "BBQ Ủn Ỉn - Sườn Heo Xông Khói" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/bbq-un-in-suon-heo-xong-khoi" .
+
+<104> res:address "61 Trần Phú" ;
+    res:id 104 ;
+    res:image "https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg" ;
+    res:name "Dae Jang Geum - Nhà Hàng Hàn Quốc" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/dae-jang-geum-nha-hang-han-quoc" .
+
+<105> res:address "Lô 13-14-15 Đường 3 Tháng 2" ;
+    res:id 105 ;
+    res:image "https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg" ;
+    res:name "Ớt Xanh Restaurant" ;
+    res:rating 7e+00 ;
+    res:url "/da-nang/ot-xanh-restaurant" .
+
+<106> res:address "463 Trần Hưng Đạo" ;
+    res:id 106 ;
+    res:image "https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg" ;
+    res:name "Yuk Hae Gong - BBQ Hàn Quốc" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/yuk-hae-gong" .
+
+<107> res:address "4 Đống Đa" ;
+    res:id 107 ;
+    res:image "https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg" ;
+    res:name "Bread of Life" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/bread-of-life" .
+
+<11> res:address "134 Phan Đăng Lưu" ;
+    res:id 11 ;
+    res:image "https://images.foody.vn/res/g18/170341/prof/s640x400/foody-mobile-sn-jpg-583-636397115846551906.jpg" ;
+    res:name "Snow Pizza" ;
+    res:rating 7.9e+00 ;
+    res:url "/da-nang/snow-pizza" .
+
+<12> res:address "3 chi nhánh" ;
+    res:id 12 ;
+    res:image "https://images.foody.vn/res/g10/94257/prof/s640x400/foody-mobile-10399619_81147453229-527-635863817212109582.jpg" ;
+    res:name "Hệ thống Dasushi - Đà Nẵng" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/dasushi-nha-hang-nhat-ban" .
+
+<13> res:address "4 chi nhánh" ;
+    res:id 13 ;
+    res:image "https://images.foody.vn/res/g2/12074/prof/s640x400/foody-upload-api-foody-mobile-4-190620114411.jpg" ;
+    res:name "Hệ thống Lotteria - Gà Rán - Đà Nẵng" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/lotteria-nguyen-thi-minh-khai" .
+
+<14> res:address "Lô 10 Võ Nguyên Giáp" ;
+    res:id 14 ;
+    res:image "https://images.foody.vn/res/g11/106321/prof/s640x400/foody-mobile-cua-bien-jpg.jpg" ;
+    res:name "Cua Biển Quán - Hải Sản Bờ Biển" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/cua-bien-quan" .
+
+<15> res:address "2 chi nhánh" ;
+    res:id 15 ;
+    res:image "https://images.foody.vn/res/g18/179002/prof/s640x400/foody-mobile-kichi-2-jpg-804-635812066400462640.jpg" ;
+    res:name "Hệ thống Lẩu Băng Chuyền Kichi Kichi" ;
+    res:rating 8e+00 ;
+    res:url "/da-nang/lau-bang-chuyen-kichi-kichi-vincom-center-da-nang" .
+
+<16> res:address "1A Trần Quốc Toản" ;
+    res:id 16 ;
+    res:image "https://images.foody.vn/res/g23/224233/prof/s640x400/foody-upload-api-foody-mobile-food-center-da-nang--180620165027.jpg" ;
+    res:name "Food Center Đà Nẵng" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/food-center-bach-dang" .
+
+<17> res:address "64 Trần Phú" ;
+    res:id 17 ;
+    res:image "https://images.foody.vn/res/g9/87167/prof/s640x400/foody-mobile-3-1-jpg-394-635628750690512238.jpg" ;
+    res:name "Star Beef" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/star-beef" .
+
+<18> res:address "Tầng 4" ;
+    res:id 18 ;
+    res:image "https://images.foody.vn/res/g25/244037/prof/s640x400/foody-upload-api-foody-mobile-foody-mobile-sumo-bb-200609143946.jpg" ;
+    res:name "Sumo BBQ - Buffet Lẩu & Nướng" ;
+    res:rating 7e+00 ;
+    res:url "/da-nang/sumo-bbq-buffet-lau-nuong" .
+
+<19> res:address "Tầng 4" ;
+    res:id 19 ;
+    res:image "https://images.foody.vn/res/g15/147983/prof/s640x400/foody-upload-api-foody-mobile-crystal-jade-kitchen-180620154504.jpg" ;
+    res:name "Crystal Jade Kitchen - Vincom Ngô Quyền - Nhà Hàng Quảng Đông" ;
+    res:rating 7e+00 ;
+    res:url "/da-nang/crystal-jade-kitchen-vincom-ngo-quyen-nha-hang-quang-dong" .
+
+<2> res:address "2 chi nhánh" ;
+    res:id 2 ;
+    res:image "https://images.foody.vn/res/g20/190802/prof/s640x400/foody-upload-api-foody-mobile-hancook-jpg-190103100855.jpg" ;
+    res:name "Hệ thống Hancook" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/han-cook-cafe-food" .
+
+<20> res:address "2 chi nhánh" ;
+    res:id 20 ;
+    res:image "https://images.foody.vn/res/g27/269438/prof/s640x400/foody-mobile-ava-jpg-325-636177345538537741.jpg" ;
+    res:name "Hệ thống Pizza 4P’s - Pizza Kiểu Nhật" ;
+    res:rating 8.3e+00 ;
+    res:url "/da-nang/pizza-4p-s-pizza-kieu-nhat-hoang-van-thu" .
+
+<21> res:address "Lô 6.C1 - 7.C1 Phạm Văn Đồng" ;
+    res:id 21 ;
+    res:image "https://images.foody.vn/res/g67/660741/prof/s640x400/foody-mobile-pa-jpg.jpg" ;
+    res:name "Papas' Chicken Restaurant" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/papas-chicken-restaurant" .
+
+<22> res:address "2 chi nhánh" ;
+    res:id 22 ;
+    res:image "https://images.foody.vn/res/g1/6500/prof/s640x400/foody-mobile-sa1-jpg.jpg" ;
+    res:name "Hệ thống Samdi Hotel" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/samdi-khong-gian-xua" .
+
+<23> res:address "119 Lê Lợi" ;
+    res:id 23 ;
+    res:image "https://images.foody.vn/res/g16/156306/prof/s640x400/foody-mobile-12549058_16974521504-899-635882916863764195.jpg" ;
+    res:name "NH Làng Nghệ - Cafe - Ăn Sáng - Cơm Niêu - Các Món Nhậu" ;
+    res:rating 8.3e+00 ;
+    res:url "/da-nang/nha-hang-lang-nghe-le-loi" .
+
+<24> res:address "90 Đường 2 Tháng 9" ;
+    res:id 24 ;
+    res:image "https://images.foody.vn/res/g12/119072/prof/s640x400/foody-upload-api-foody-mobile-20-191008164949.jpg" ;
+    res:name "Bushido Restaurant" ;
+    res:rating 7.9e+00 ;
+    res:url "/da-nang/bushido-restaurant" .
+
+<25> res:address "23 Nguyễn Chí Thanh" ;
+    res:id 25 ;
+    res:image "https://images.foody.vn/res/g9/88414/prof/s640x400/foody-upload-api-foody-mobile-banjiro-jpg-181003100642.jpg" ;
+    res:name "Xiên Nướng Banjiro" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/xien-nuong-banjiro" .
+
+<26> res:address "Tầng 33 - 34" ;
+    res:id 26 ;
+    res:image "https://images.foody.vn/res/g64/630414/prof/s640x400/foody-mobile-hcang-jpg-740-636419464577152750.jpg" ;
+    res:name "Hải Cảng Restaurant - Ẩm Thực Trung Hoa - Novotel" ;
+    res:rating 8.8e+00 ;
+    res:url "/da-nang/hai-cang-restaurant-am-thuc-trung-hoa-novotel" .
+
+<27> res:address "87 Trần Phú" ;
+    res:id 27 ;
+    res:image "https://images.foody.vn/res/g17/162043/prof/s640x400/foody-mobile-tro-jpg.jpg" ;
+    res:name "Retro Kitchen & Bar" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/retro-kitchen-bar" .
+
+<28> res:address "2 chi nhánh" ;
+    res:id 28 ;
+    res:image "https://images.foody.vn/res/g15/147984/prof/s640x400/foody-mobile-5-jpg-509-636341508490308948.jpg" ;
+    res:name "Hệ thống Gà Rán Jollibee - Đà Nẵng" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/jollibee-vincom-center-da-nang" .
+
+<29> res:address "6 chi nhánh" ;
+    res:id 29 ;
+    res:image "https://images.foody.vn/res/g1/8502/prof/s640x400/foody-upload-api-foody-mobile-fkc-jpg-180601094259.jpg" ;
+    res:name "Hệ thống Gà Rán KFC - Miền Trung" ;
+    res:rating 7.2e+00 ;
+    res:url "/da-nang/ga-ran-kfc-nguyen-van-linh" .
+
+<3> res:address "6 chi nhánh" ;
+    res:id 3 ;
+    res:image "https://images.foody.vn/res/g1/150/prof/s640x400/foody-mobile--bba8d83926e3bf1c989-524-635931405901928196.jpg" ;
+    res:name "Hệ thống Quán Trần - Đặc Sản Đà Nẵng" ;
+    res:rating 6.7e+00 ;
+    res:url "/da-nang/banh-trang-thit-heo-tran-le-duan" .
+
+<30> res:address "51 Mai Hắc Đế" ;
+    res:id 30 ;
+    res:image "https://images.foody.vn/res/g5/43303/prof/s640x400/foody-mobile-la2-jpg-294-636125535213002918.jpg" ;
+    res:name "Beefsteak 51 - Mai Hắc Đế" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/beefsteak-51-mai-hac-de" .
+
+<31> res:address "Tầng 4" ;
+    res:id 31 ;
+    res:image "https://images.foody.vn/res/g15/147562/prof/s640x400/foody-mobile-foody-magic-pan-food-787-635882919166484240.jpg" ;
+    res:name "Magic Pan Food Palace - Vincom Center Đà Nẵng" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/magic-pan-food-palace-vincom-center-da-nang" .
+
+<32> res:address "74 Trần Phú" ;
+    res:id 32 ;
+    res:image "https://images.foody.vn/res/g2/13017/prof/s640x400/foody-mobile-foody-pizza-om-74-tr-127-635895047925033890.jpg" ;
+    res:name "Pizza 74" ;
+    res:rating 7.4e+00 ;
+    res:url "/da-nang/pizza-74" .
+
+<33> res:address "22 - 24 Bạch Đằng" ;
+    res:id 33 ;
+    res:image "https://images.foody.vn/res/g20/196028/prof/s640x400/foody-upload-api-foody-mobile-10-jpg-181105164736.jpg" ;
+    res:name "Runam Bistro - Bạch Đằng" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/runam-cafe" .
+
+<34> res:address "Lô 3 - A 5,6 Khu công viên Bắc Tượng Đài" ;
+    res:id 34 ;
+    res:image "https://images.foody.vn/res/g15/148365/prof/s640x400/foody-mobile-sashimi_600x384-1050-856-635768973265857441.jpg" ;
+    res:name "The Sushi Bar - Thiên Quế" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/the-sushi-bar-thien-que" .
+
+<35> res:address "Lô G1 Phạm Văn Đồng" ;
+    res:id 35 ;
+    res:image "https://images.foody.vn/res/g21/204072/prof/s640x400/foody-mobile-foody-suon-nuong-cao-945-635933011572191108.jpg" ;
+    res:name "Sườn Nướng Cao Bồi" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/suon-nuong-cao-boi" .
+
+<36> res:address "135 Trần Hưng Đạo" ;
+    res:id 36 ;
+    res:image "https://images.foody.vn/res/g9/88275/prof/s640x400/foody-upload-api-foody-mobile-2-200629111221.jpg" ;
+    res:name "Thịt Tốt Restaurant" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/thit-tot-restaurant" .
+
+<37> res:address "4 Bạch Đằng" ;
+    res:id 37 ;
+    res:image "https://images.foody.vn/res/g1/6259/prof/s640x400/foody-upload-api-foody-mobile-madame-lan-am-thuc-v-180620151547.jpg" ;
+    res:name "Madame Lân - Ẩm Thực VIệt" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/madame-lan" .
+
+<38> res:address "389 Trần Hưng Đạo" ;
+    res:id 38 ;
+    res:image "https://images.foody.vn/res/g66/658216/prof/s640x400/foody-mobile-myth-jpg-641-636332292467972129.jpg" ;
+    res:name "My Thái Restaurant - Ẩm Thực Thái" ;
+    res:rating 8.1e+00 ;
+    res:url "/da-nang/my-thai-restaurant-am-thuc-thai" .
+
+<39> res:address "2 chi nhánh" ;
+    res:id 39 ;
+    res:image "https://images.foody.vn/res/g27/269547/prof/s640x400/foody-mobile-bell-jpg-550-636138680304265862.jpg" ;
+    res:name "Hệ thống Bella Pizza" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/bella-pizza" .
+
+<4> res:address "210 Trần Phú" ;
+    res:id 4 ;
+    res:image "https://images.foody.vn/res/g4/36228/prof/s640x400/foody-upload-api-foody-mobile-2018122511624-4-sant-190102083757.jpg" ;
+    res:name "Al Fresco's - Pizza, Mỳ Ý, Sườn, Steak Bò Bít Tết - Trần Phú" ;
+    res:rating 7.9e+00 ;
+    res:url "/da-nang/al-fresco-s-pizza-my-y-suon-steak-bo-bit-tet-tran-phu" .
+
+<40> res:address "2 chi nhánh" ;
+    res:id 40 ;
+    res:image "https://images.foody.vn/res/g1/3232/prof/s640x400/foody-mobile-truc-lam-vien-mb-jpg-940-635784535242864353.jpg" ;
+    res:name "Hệ thống Trúc Lâm Viên" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/truc-lam-vien-cafe-restaurant" .
+
+<41> res:address "105 - 107 Nguyễn Văn Linh" ;
+    res:id 41 ;
+    res:image "https://images.foody.vn/res/g8/72518/prof/s640x400/foody-mobile-album-ngay-25-9-9-jp-747-635787978453521375.jpg" ;
+    res:name "Nướng Đà Thành - BBQ" ;
+    res:rating 2.5e+00 ;
+    res:url "/da-nang/nuong-da-thanh" .
+
+<42> res:address "305 Trần Hưng Đạo" ;
+    res:id 42 ;
+    res:image "https://images.foody.vn/res/g28/275157/prof/s640x400/foody-upload-api-foody-mobile-cafe-jpg-181210173358.jpg" ;
+    res:name "Palmier Café & Restaurant" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/palmier-cafe-restaurant" .
+
+<43> res:address "56 Nguyễn Chí Thanh" ;
+    res:id 43 ;
+    res:image "https://images.foody.vn/res/g68/675365/prof/s640x400/foody-upload-api-foody-mobile-liu-chu-fang-buffet--180620144447.jpg" ;
+    res:name "Liu Chu Fang - Buffet Lẩu & Dimsum Hồng Kông" ;
+    res:rating 6.7e+00 ;
+    res:url "/da-nang/liu-chu-fang-buffet-lau-dimsum-hong-kong" .
+
+<44> res:address "5 Yên Bái" ;
+    res:id 44 ;
+    res:image "https://images.foody.vn/res/g1/6725/prof/s640x400/foody-mobile-binee-jpg-222-636137632259652645.jpg" ;
+    res:name "Bin Restaurant - Bánh Donut & Gà Nướng" ;
+    res:rating 7.4e+00 ;
+    res:url "/da-nang/nha-hang-bin" .
+
+<45> res:address "5 chi nhánh" ;
+    res:id 45 ;
+    res:image "https://images.foody.vn/res/g31/300040/prof/s640x400/foody-upload-api-foody-mobile-thaim-jpg-180510171612.jpg" ;
+    res:name "Hệ thống Thai Market" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/thai-market-thai-phien" .
+
+<46> res:address "155 Ngô Quyền" ;
+    res:id 46 ;
+    res:image "https://images.foody.vn/res/g32/314513/prof/s640x400/foody-mobile-hquoc-jpg-699-636318462927719198.jpg" ;
+    res:name "Korean Street Food - Ẩm Thực Đường Phố Hàn Quốc" ;
+    res:rating 7.4e+00 ;
+    res:url "/da-nang/food-market-restaurant-mon-viet" .
+
+<47> res:address "225 Nguyễn Chí Thanh" ;
+    res:id 47 ;
+    res:image "https://images.foody.vn/res/g1/3233/prof/s640x400/foody-upload-api-foody-mobile-phi-lu-1-jpg-180620093908.jpg" ;
+    res:name "Phì Lũ 1" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/phi-lu-1" .
+
+<48> res:address "3 chi nhánh" ;
+    res:id 48 ;
+    res:image "https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg" ;
+    res:name "Hệ thống Ẩm Thực XÈO" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/xeo-fry-grill" .
+
+<49> res:address "219 Nguyễn Chí Thanh" ;
+    res:id 49 ;
+    res:image "https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg" ;
+    res:name "Mr. Pizza - Nguyễn Chí Thanh" ;
+    res:rating 7.1e+00 ;
+    res:url "/da-nang/mr-pizza-nguyen-chi-thanh" .
+
+<5> res:address "916 Ngô Quyền" ;
+    res:id 5 ;
+    res:image "https://images.foody.vn/res/g5/41178/prof/s640x400/foody-mobile-xien-que-sushi-jpg-306-635883649490025589.jpg" ;
+    res:name "Xiên Que - Ngô Quyền" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/xien-que-nguyen-thi-minh-khai" .
+
+<50> res:address "168 Phan Châu Trinh" ;
+    res:id 50 ;
+    res:image "https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg" ;
+    res:name "Ecstasy Restaurant - Ẩm Thực 3 Miền" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/ecstasy-restaurant-am-thuc-3-mien" .
+
+<51> res:address "32 Thái Phiên" ;
+    res:id 51 ;
+    res:image "https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg" ;
+    res:name "Michi Sushi" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/michi-sushi-nguyen-van-linh" .
+
+<52> res:address "18 Trần Phú" ;
+    res:id 52 ;
+    res:image "https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg" ;
+    res:name "Đông Dương - Ẩm Thực Việt" ;
+    res:rating 7.9e+00 ;
+    res:url "/da-nang/dong-duong-am-thuc-viet" .
+
+<53> res:address "3 chi nhánh" ;
+    res:id 53 ;
+    res:image "https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg" ;
+    res:name "Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/de-nghia-2-he-thong-de-da-nang" .
+
+<54> res:address "9A Trần Phú" ;
+    res:id 54 ;
+    res:image "https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg" ;
+    res:name "Luna Pub - Trần Phú" ;
+    res:rating 7.4e+00 ;
+    res:url "/da-nang/luna-pub-tran-phu" .
+
+<55> res:address "379 Trần Hưng Đạo" ;
+    res:id 55 ;
+    res:image "https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg" ;
+    res:name "BBQ Ủn Ỉn - Sườn Heo Xông Khói" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/bbq-un-in-suon-heo-xong-khoi" .
+
+<56> res:address "61 Trần Phú" ;
+    res:id 56 ;
+    res:image "https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg" ;
+    res:name "Dae Jang Geum - Nhà Hàng Hàn Quốc" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/dae-jang-geum-nha-hang-han-quoc" .
+
+<57> res:address "Lô 13-14-15 Đường 3 Tháng 2" ;
+    res:id 57 ;
+    res:image "https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg" ;
+    res:name "Ớt Xanh Restaurant" ;
+    res:rating 7e+00 ;
+    res:url "/da-nang/ot-xanh-restaurant" .
+
+<58> res:address "463 Trần Hưng Đạo" ;
+    res:id 58 ;
+    res:image "https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg" ;
+    res:name "Yuk Hae Gong - BBQ Hàn Quốc" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/yuk-hae-gong" .
+
+<59> res:address "4 Đống Đa" ;
+    res:id 59 ;
+    res:image "https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg" ;
+    res:name "Bread of Life" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/bread-of-life" .
+
+<6> res:address "4 Phạm Văn Đồng" ;
+    res:id 6 ;
+    res:image "https://images.foody.vn/res/g22/214989/prof/s640x400/foody-upload-api-foody-mobile-15-190319145437.jpg" ;
+    res:name "Phố Nướng Tokyo" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/pho-nuong-tokyo" .
+
+<60> res:address "3 chi nhánh" ;
+    res:id 60 ;
+    res:image "https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg" ;
+    res:name "Hệ thống Ẩm Thực XÈO" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/xeo-fry-grill" .
+
+<61> res:address "219 Nguyễn Chí Thanh" ;
+    res:id 61 ;
+    res:image "https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg" ;
+    res:name "Mr. Pizza - Nguyễn Chí Thanh" ;
+    res:rating 7.1e+00 ;
+    res:url "/da-nang/mr-pizza-nguyen-chi-thanh" .
+
+<62> res:address "168 Phan Châu Trinh" ;
+    res:id 62 ;
+    res:image "https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg" ;
+    res:name "Ecstasy Restaurant - Ẩm Thực 3 Miền" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/ecstasy-restaurant-am-thuc-3-mien" .
+
+<63> res:address "32 Thái Phiên" ;
+    res:id 63 ;
+    res:image "https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg" ;
+    res:name "Michi Sushi" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/michi-sushi-nguyen-van-linh" .
+
+<64> res:address "18 Trần Phú" ;
+    res:id 64 ;
+    res:image "https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg" ;
+    res:name "Đông Dương - Ẩm Thực Việt" ;
+    res:rating 7.9e+00 ;
+    res:url "/da-nang/dong-duong-am-thuc-viet" .
+
+<65> res:address "3 chi nhánh" ;
+    res:id 65 ;
+    res:image "https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg" ;
+    res:name "Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/de-nghia-2-he-thong-de-da-nang" .
+
+<66> res:address "9A Trần Phú" ;
+    res:id 66 ;
+    res:image "https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg" ;
+    res:name "Luna Pub - Trần Phú" ;
+    res:rating 7.4e+00 ;
+    res:url "/da-nang/luna-pub-tran-phu" .
+
+<67> res:address "379 Trần Hưng Đạo" ;
+    res:id 67 ;
+    res:image "https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg" ;
+    res:name "BBQ Ủn Ỉn - Sườn Heo Xông Khói" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/bbq-un-in-suon-heo-xong-khoi" .
+
+<68> res:address "61 Trần Phú" ;
+    res:id 68 ;
+    res:image "https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg" ;
+    res:name "Dae Jang Geum - Nhà Hàng Hàn Quốc" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/dae-jang-geum-nha-hang-han-quoc" .
+
+<69> res:address "Lô 13-14-15 Đường 3 Tháng 2" ;
+    res:id 69 ;
+    res:image "https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg" ;
+    res:name "Ớt Xanh Restaurant" ;
+    res:rating 7e+00 ;
+    res:url "/da-nang/ot-xanh-restaurant" .
+
+<7> res:address "2 chi nhánh" ;
+    res:id 7 ;
+    res:image "https://images.foody.vn/res/g16/159179/prof/s640x400/foody-upload-api-foody-mobile-8ddafa3b-63f6-4ce6-a-200221133053.jpg" ;
+    res:name "Hệ thống PapaSteak" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/papasteak-152-phan-thanh" .
+
+<70> res:address "463 Trần Hưng Đạo" ;
+    res:id 70 ;
+    res:image "https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg" ;
+    res:name "Yuk Hae Gong - BBQ Hàn Quốc" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/yuk-hae-gong" .
+
+<71> res:address "4 Đống Đa" ;
+    res:id 71 ;
+    res:image "https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg" ;
+    res:name "Bread of Life" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/bread-of-life" .
+
+<72> res:address "3 chi nhánh" ;
+    res:id 72 ;
+    res:image "https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg" ;
+    res:name "Hệ thống Ẩm Thực XÈO" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/xeo-fry-grill" .
+
+<73> res:address "219 Nguyễn Chí Thanh" ;
+    res:id 73 ;
+    res:image "https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg" ;
+    res:name "Mr. Pizza - Nguyễn Chí Thanh" ;
+    res:rating 7.1e+00 ;
+    res:url "/da-nang/mr-pizza-nguyen-chi-thanh" .
+
+<74> res:address "168 Phan Châu Trinh" ;
+    res:id 74 ;
+    res:image "https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg" ;
+    res:name "Ecstasy Restaurant - Ẩm Thực 3 Miền" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/ecstasy-restaurant-am-thuc-3-mien" .
+
+<75> res:address "32 Thái Phiên" ;
+    res:id 75 ;
+    res:image "https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg" ;
+    res:name "Michi Sushi" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/michi-sushi-nguyen-van-linh" .
+
+<76> res:address "18 Trần Phú" ;
+    res:id 76 ;
+    res:image "https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg" ;
+    res:name "Đông Dương - Ẩm Thực Việt" ;
+    res:rating 7.9e+00 ;
+    res:url "/da-nang/dong-duong-am-thuc-viet" .
+
+<77> res:address "3 chi nhánh" ;
+    res:id 77 ;
+    res:image "https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg" ;
+    res:name "Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/de-nghia-2-he-thong-de-da-nang" .
+
+<78> res:address "9A Trần Phú" ;
+    res:id 78 ;
+    res:image "https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg" ;
+    res:name "Luna Pub - Trần Phú" ;
+    res:rating 7.4e+00 ;
+    res:url "/da-nang/luna-pub-tran-phu" .
+
+<79> res:address "379 Trần Hưng Đạo" ;
+    res:id 79 ;
+    res:image "https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg" ;
+    res:name "BBQ Ủn Ỉn - Sườn Heo Xông Khói" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/bbq-un-in-suon-heo-xong-khoi" .
+
+<8> res:address "176 Nguyễn Chí Thanh" ;
+    res:id 8 ;
+    res:image "https://images.foody.vn/res/g12/115342/prof/s640x400/foody-mobile-vin-22-jpg-536-635984020478644129.jpg" ;
+    res:name "Cuisine De Vin - Bếp Nhà Vin" ;
+    res:rating 7.9e+00 ;
+    res:url "/da-nang/cuisine-de-vin" .
+
+<80> res:address "61 Trần Phú" ;
+    res:id 80 ;
+    res:image "https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg" ;
+    res:name "Dae Jang Geum - Nhà Hàng Hàn Quốc" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/dae-jang-geum-nha-hang-han-quoc" .
+
+<81> res:address "Lô 13-14-15 Đường 3 Tháng 2" ;
+    res:id 81 ;
+    res:image "https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg" ;
+    res:name "Ớt Xanh Restaurant" ;
+    res:rating 7e+00 ;
+    res:url "/da-nang/ot-xanh-restaurant" .
+
+<82> res:address "463 Trần Hưng Đạo" ;
+    res:id 82 ;
+    res:image "https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg" ;
+    res:name "Yuk Hae Gong - BBQ Hàn Quốc" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/yuk-hae-gong" .
+
+<83> res:address "4 Đống Đa" ;
+    res:id 83 ;
+    res:image "https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg" ;
+    res:name "Bread of Life" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/bread-of-life" .
+
+<84> res:address "3 chi nhánh" ;
+    res:id 84 ;
+    res:image "https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg" ;
+    res:name "Hệ thống Ẩm Thực XÈO" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/xeo-fry-grill" .
+
+<85> res:address "219 Nguyễn Chí Thanh" ;
+    res:id 85 ;
+    res:image "https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg" ;
+    res:name "Mr. Pizza - Nguyễn Chí Thanh" ;
+    res:rating 7.1e+00 ;
+    res:url "/da-nang/mr-pizza-nguyen-chi-thanh" .
+
+<86> res:address "168 Phan Châu Trinh" ;
+    res:id 86 ;
+    res:image "https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg" ;
+    res:name "Ecstasy Restaurant - Ẩm Thực 3 Miền" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/ecstasy-restaurant-am-thuc-3-mien" .
+
+<87> res:address "32 Thái Phiên" ;
+    res:id 87 ;
+    res:image "https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg" ;
+    res:name "Michi Sushi" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/michi-sushi-nguyen-van-linh" .
+
+<88> res:address "18 Trần Phú" ;
+    res:id 88 ;
+    res:image "https://images.foody.vn/res/g1/8488/prof/s640x400/foody-upload-api-foody-mobile-dong-duong-am-thuc-v-180629135613.jpg" ;
+    res:name "Đông Dương - Ẩm Thực Việt" ;
+    res:rating 7.9e+00 ;
+    res:url "/da-nang/dong-duong-am-thuc-viet" .
+
+<89> res:address "3 chi nhánh" ;
+    res:id 89 ;
+    res:image "https://images.foody.vn/res/g9/89635/prof/s640x400/foody-mobile-foody-quan-nghia-dac-664-635727446416075386.jpg" ;
+    res:name "Hệ thống Dê Nghĩa - Hệ Thống Dê Đà Nẵng" ;
+    res:rating 7.8e+00 ;
+    res:url "/da-nang/de-nghia-2-he-thong-de-da-nang" .
+
+<9> res:address "2 chi nhánh" ;
+    res:id 9 ;
+    res:image "https://images.foody.vn/res/g18/170016/prof/s640x400/foody-upload-api-foody-mobile-faifo-jpg-181221150818.jpg" ;
+    res:name "Hệ thống Faifo Grill & Buffet Restaurant" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/faifo-grill-buffet-restaurant" .
+
+<90> res:address "9A Trần Phú" ;
+    res:id 90 ;
+    res:image "https://images.foody.vn/res/g5/49735/prof/s640x400/foody-upload-api-foody-mobile-luna-pub-tran-phu-jp-180620113242.jpg" ;
+    res:name "Luna Pub - Trần Phú" ;
+    res:rating 7.4e+00 ;
+    res:url "/da-nang/luna-pub-tran-phu" .
+
+<91> res:address "379 Trần Hưng Đạo" ;
+    res:id 91 ;
+    res:image "https://images.foody.vn/res/g24/230117/prof/s640x400/foody-mobile-heo-xkk-jpg-220-636160953126972310.jpg" ;
+    res:name "BBQ Ủn Ỉn - Sườn Heo Xông Khói" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/bbq-un-in-suon-heo-xong-khoi" .
+
+<92> res:address "61 Trần Phú" ;
+    res:id 92 ;
+    res:image "https://images.foody.vn/res/g9/88757/prof/s640x400/foody-mobile-dea-jpg-720-636348609180720748.jpg" ;
+    res:name "Dae Jang Geum - Nhà Hàng Hàn Quốc" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/dae-jang-geum-nha-hang-han-quoc" .
+
+<93> res:address "Lô 13-14-15 Đường 3 Tháng 2" ;
+    res:id 93 ;
+    res:image "https://images.foody.vn/res/g10/91835/prof/s640x400/foody-mobile-foody-ot-xanh-restau-877-635972612887643632.jpg" ;
+    res:name "Ớt Xanh Restaurant" ;
+    res:rating 7e+00 ;
+    res:url "/da-nang/ot-xanh-restaurant" .
+
+<94> res:address "463 Trần Hưng Đạo" ;
+    res:id 94 ;
+    res:image "https://images.foody.vn/res/g30/290530/prof/s640x400/foody-mobile-yu-jpg-770-636155806981514476.jpg" ;
+    res:name "Yuk Hae Gong - BBQ Hàn Quốc" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/yuk-hae-gong" .
+
+<95> res:address "4 Đống Đa" ;
+    res:id 95 ;
+    res:image "https://images.foody.vn/res/g1/8440/prof/s640x400/foody-upload-api-foody-mobile-gh-191120171456.jpg" ;
+    res:name "Bread of Life" ;
+    res:rating 7.6e+00 ;
+    res:url "/da-nang/bread-of-life" .
+
+<96> res:address "3 chi nhánh" ;
+    res:id 96 ;
+    res:image "https://images.foody.vn/res/g26/250858/prof/s640x400/foody-upload-api-foody-mobile-am-thuc-xeo-hoang-va-180620144754.jpg" ;
+    res:name "Hệ thống Ẩm Thực XÈO" ;
+    res:rating 7.5e+00 ;
+    res:url "/da-nang/xeo-fry-grill" .
+
+<97> res:address "219 Nguyễn Chí Thanh" ;
+    res:id 97 ;
+    res:image "https://images.foody.vn/res/g1/8496/prof/s640x400/foody-mobile-piz-jpg-199-636185403373776729.jpg" ;
+    res:name "Mr. Pizza - Nguyễn Chí Thanh" ;
+    res:rating 7.1e+00 ;
+    res:url "/da-nang/mr-pizza-nguyen-chi-thanh" .
+
+<98> res:address "168 Phan Châu Trinh" ;
+    res:id 98 ;
+    res:image "https://images.foody.vn/res/g10/91424/prof/s640x400/foody-mobile-m-hinh-jpg-450-636283633463652718.jpg" ;
+    res:name "Ecstasy Restaurant - Ẩm Thực 3 Miền" ;
+    res:rating 7.7e+00 ;
+    res:url "/da-nang/ecstasy-restaurant-am-thuc-3-mien" .
+
+<99> res:address "32 Thái Phiên" ;
+    res:id 99 ;
+    res:image "https://images.foody.vn/res/g66/653398/prof/s640x400/foody-mobile-mic-jpg-379-636286395578877384.jpg" ;
+    res:name "Michi Sushi" ;
+    res:rating 7.3e+00 ;
+    res:url "/da-nang/michi-sushi-nguyen-van-linh" .
+
