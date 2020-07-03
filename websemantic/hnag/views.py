@@ -121,15 +121,35 @@ def search(request):
     print(rs)
     mon = []
     duong = []
+    quan = []
     checkduong = ['Đường', 'đường']
+    checkquan = ['Quận', 'quận']
     for i in range(len(rs)):
-        if rs[i][1] in ['Np','N','M'] and rs[i-1][0] in checkduong:
-            duong.append(rs[i][0])
-        elif rs[i][1] in ['Np','N','M'] and str(rs[i-1][0]).isnumeric():
-            soduong = rs[i-1][0] + " " + rs[i][0]
-            duong.append(soduong)
-        elif rs[i][1] == 'Np':
-            mon.append(rs[i][0])    
+        if rs[i][1] in ['Np','N','M']:
+            if i == 0:
+                if rs[i][1] in ['Np','N','M'] and rs[i+1][1] == 'E':
+                    mon.append(rs[i][0])
+            else:
+                if rs[i-1][0] in checkquan:
+                    quan.append(rs[i][0]) 
+                elif rs[i-1][0] in checkduong:
+                    duong.append(rs[i][0])  
+                elif str(rs[i-1][0]).isnumeric():
+                    soduong = rs[i-1][0] + " " + rs[i][0]
+                    duong.append(soduong)              
+                elif rs[i-1][1] == 'V' or rs[i+1][1] == 'E':
+                    mon.append(rs[i][0])   
+                
+        # if rs[i][1] in ['Np','N','M'] and rs[i-1][0] in checkquan:
+        #     quan.append(rs[i][0])
+        # elif rs[i][1] in ['Np','N','M'] and rs[i-1][0] in checkduong:
+        #     duong.append(rs[i][0])
+        # elif rs[i][1] in ['Np','N','M'] and str(rs[i-1][0]).isnumeric():
+        #     soduong = rs[i-1][0] + " " + rs[i][0]
+        #     duong.append(soduong)
+        # elif rs[i][1] in ['Np','N','M'] and (rs[i+1][1] == 'E' or rs[i-1][1] == 'V'):
+        #     mon.append(rs[i][0])    
+    print("Quận: ", quan)
     print("Đường: ",duong)
     print("Món: ", mon)
     # return JsonResponse({
@@ -140,43 +160,34 @@ def search(request):
     # g = g.parse("hnag/static/hnag/restaurants.xml", format="xml")
     g = SPARQLWrapper("http://localhost:7200/repositories/HNAG")
     
-    if (len(duong) == 0): 
-        if (len(mon) == 0):      
-            queryString = """
-                PREFIX res: <http://www.hnag.com/>
-                SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
-                WHERE {
-                    ?place res:name ?name.
-                    ?place res:address ?address.
-                    ?place res:url ?url.
-                    ?place res:rating ?rating.
-                    ?place res:image ?image.
-                    ?place res:id ?id.
-                    FILTER regex(?name,""" + """'""" + search + """','i').            
-                } 
-                ORDER BY (?id)
-                """
-            print(queryString)
-            g.setQuery(queryString)
-            
-        else:
-            queryString = """
-                PREFIX res: <http://www.hnag.com/>
-                SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
-                WHERE {
-                    ?place res:name ?name.
-                    ?place res:address ?address.
-                    ?place res:url ?url.
-                    ?place res:rating ?rating.
-                    ?place res:image ?image.
-                    ?place res:id ?id.
-                    FILTER regex(?name,""" + """'""" + mon[0] + """','i').            
-                } 
-                ORDER BY (?id)
-                """
-            print(queryString)
-            g.setQuery(queryString)
-    else:
+    if (len(quan) > 0):
+        print(mon)
+        print(quan)
+        regex = """"""
+        for i in range(len(mon)):
+            regex += """FILTER regex(?name,""" + """'""" + mon[i] + """','i')."""
+        for i in range(len(quan)):
+            regex += """FILTER regex(?districtName,""" + """'""" + quan[i] + """','i')."""
+        print(regex)
+        queryString = """
+            PREFIX res: <http://www.hnag.com/>
+            SELECT DISTINCT *
+            WHERE {
+                ?place res:name ?name.                
+                ?place res:url ?url.
+                ?place res:rating ?rating.
+                ?place res:image ?image.
+                ?place res:id ?id.
+                ?place res:address ?address.
+                ?address res:district ?district.
+                ?district res:name ?districtName                
+                """ + regex + """            
+            } 
+            ORDER BY DESC(?rating)
+            """
+        print(queryString)
+        g.setQuery(queryString)
+    elif len(duong) > 0:
         print(mon)
         print(duong)
         regex = """"""
@@ -198,10 +209,46 @@ def search(request):
                 ?place res:id ?id.
                 """ + regex + """            
             } 
-            ORDER BY (?id)
+            ORDER BY DESC(?rating)
             """
         print(queryString)
-        g.setQuery(queryString) 
+        g.setQuery(queryString)
+    elif len(mon) == 0:      
+        queryString = """
+            PREFIX res: <http://www.hnag.com/>
+            SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
+            WHERE {
+                ?place res:name ?name.
+                ?place res:address ?address.
+                ?place res:url ?url.
+                ?place res:rating ?rating.
+                ?place res:image ?image.
+                ?place res:id ?id.
+                FILTER regex(?name,""" + """'""" + search + """','i').            
+            } 
+            ORDER BY DESC(?rating)
+            """
+        print(queryString)
+        g.setQuery(queryString)
+        
+    else:
+        queryString = """
+            PREFIX res: <http://www.hnag.com/>
+            SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
+            WHERE {
+                ?place res:name ?name.
+                ?place res:address ?address.
+                ?place res:url ?url.
+                ?place res:rating ?rating.
+                ?place res:image ?image.
+                ?place res:id ?id.
+                FILTER regex(?name,""" + """'""" + mon[0] + """','i').            
+            } 
+            ORDER BY DESC(?rating)
+            """
+        print(queryString)
+        g.setQuery(queryString)
+    
     g.setReturnFormat(JSON)
     results = g.query().convert() 
     
