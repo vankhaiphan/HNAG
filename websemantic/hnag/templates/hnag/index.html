@@ -38,9 +38,23 @@
 				fetch(`/posts?start=${start}&end=${end}`)
                 .then(response => response.json())
                 .then(data => {
-                    data.posts.forEach(add_post);
+                    data.posts.forEach(function (item) {
+						add_post(item, 'cardpost0')
+					});
                 })				
 			};
+
+			function loadSubMenu(index) {
+				fetch(`/loadSubMenu?subMenuID=${index}`)
+				.then(response => response.json())
+				.then(data => {
+					data.posts.forEach(function (item) {
+						add_post(item, `cardpost${index}`)
+					});
+				}).then( () => {
+					$(`#nav-link${index}`).attr('onclick', '')
+				})
+			}
 
 			//Show modal whenever a card is clicked
 			function showModal(e) {
@@ -66,7 +80,7 @@
 			};
 
 			// Add a new post with given contents to DOM.
-			function add_post(contents) {
+			function add_post(contents, elementID) {
 
 				const col = document.createElement('div');
 				col.className = 'col-md-4 col-sm-6 col-12';
@@ -118,7 +132,8 @@
 				col.append(urlWrapper);
 				
 				// Add post to DOM.
-				document.querySelector('#cardpost').append(col);
+				
+				document.querySelector(`#${elementID}`).append(col);
 				// document.querySelector('#cardpost').append(document.createElement('br'));
 			};
 			
@@ -166,18 +181,15 @@
 			<div style="background-color: #f8f9fa;">
 				<nav class="navbar navbar-light bg-light">
 					<ul class="nav nav-tabs">
-						<li class="nav-item">
-							<a class="nav-link active" data-toggle="tab" href="#main-menu">Recommend</a>
+						<li class="nav-item" >
+							<a id="nav-link0" class="nav-link active" data-toggle="tab" href="#main-menu">Recommend</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#menu1">Rice</a>
+						<li class="nav-item" >
+							<a id="nav-link1" class="nav-link" data-toggle="tab" href="#menu1" onclick="loadSubMenu(1)">Rice</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#menu2">Drink</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#menu3">Fastfood</a>
-						</li>				
+						<li class="nav-item" >
+							<a id="nav-link2" class="nav-link" data-toggle="tab" href="#menu2" onclick="loadSubMenu(2)">Fastfood</a>
+						</li>			
 					</ul>
 				</nav> 
 				<!-- Modal -->
@@ -211,18 +223,19 @@
 				</div> 
 				<div class="tab-content">
 					<div class="tab-pane active container" id="main-menu">
-						<div class="card-deck" id="cardpost">				
+						<div class="card-deck" id="cardpost0">				
 					
 						</div> 						
 					</div>
-					<div class="tab-pane container" id="menu1">
-						<h1>Menu1</h1>
+					<div class="tab-pane container" id='menu1'>
+						<div class="card-deck" id="cardpost1">				
+					
+						</div> 	
 					</div>
 					<div class="tab-pane container" id="menu2">
-						<h1>Menu2</h1>
-					</div>
-					<div class="tab-pane container" id="menu3">
-						<h1>Mennu3</h1>
+						<div class="card-deck" id="cardpost2">				
+					
+						</div> 	
 					</div>
 				</div> 
 			</div>			

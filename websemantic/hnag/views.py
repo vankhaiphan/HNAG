@@ -77,6 +77,43 @@ def posts(request):
         "posts": dt
     })
 
+def loadSubMenu(request):
+    foodType = ["Cơm", "Gà rán"]
+    typeId = int(request.GET["subMenuID"]) - 1
+    print(typeId)
+    g = SPARQLWrapper("http://localhost:7200/repositories/HNAG")
+    queryString = '''
+        PREFIX res: <http://www.hnag.com/>
+        SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
+        WHERE {
+            ?place res:name ?name.
+            ?place res:address ?address.
+            ?place res:url ?url.
+            ?place res:rating ?rating.
+            ?place res:image ?image.
+            ?place res:id ?id.
+            FILTER regex(?name, "'''+ foodType[typeId] +'''",'i').
+        }
+        ORDER BY (?id)
+    '''
+    print(queryString)
+    g.setQuery(queryString)
+    g.setReturnFormat(JSON)
+    results = g.query().convert()
+    dt = []
+    for row in results["results"]["bindings"]:
+        print(row["id"]["value"])
+        lJson = {
+            "url": row["url"]["value"],
+            "name": row["name"]["value"],
+            "rate": row["rating"]["value"],
+            "image": row["image"]["value"]
+        }
+        dt.append(lJson)
+    return JsonResponse({
+        "posts": dt
+    })
+
 def search(request):
     search = str(request.GET.get("search"))
     # print(search)
