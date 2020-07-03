@@ -35,54 +35,42 @@ def logout_view(request):
 
 def posts(request):
     # Get start and end point for posts to generate.
-    start = str(int(request.GET.get("start") or 0)).zfill(3)
-    end = str(int(request.GET.get("end") or (start + 9))).zfill(3)
+    start = str(int(request.GET.get("start") or 0))
+    end = str(int(request.GET.get("end") or (start + 9)))
 
     # Generate list of posts.
     dt = []
-    # data = pd.read_csv('hnag/data.csv', sep=',')
-    # for i in range(start, end + 1):   
-    #     lJson = {
-    #         "url": data.loc[i][0],
-    #         "name": data.loc[i][1],
-    #         "rate": data.loc[i][2],
-    #         "image": data.loc[i][3]
-    #     }
-    #     dt.append(lJson)
-        # dt.append(f"Post #{i}")
 
-    # Artificially delay speed of response.
-    # time.sleep(1)    
-    # Return list of posts.
-    # print(dt)
-    # return JsonResponse({
-    #     "posts": dt
-    # })
+    # g = rdflib.Graph()
+    # g = g.parse("hnag/static/hnag/data.xml", format="xml")
+    g = SPARQLWrapper("http://localhost:7200/repositories/HNAG")
 
-    g = rdflib.Graph()
-    g = g.parse("hnag/static/hnag/data.xml", format="xml")
-    # g = SPARQLWrapper("http://localhost:7200/repositories/HNAG/statements")
-
-    result = g.query("""
+    queryString = """
+        PREFIX res: <http://www.hnag.com/>
         SELECT DISTINCT ?name ?url ?rating ?image ?id
         WHERE {
-            ?place cd:name ?name.
-            ?place cd:url ?url.
-            ?place cd:rating ?rating.
-            ?place cd:image ?image.
-            ?place cd:id ?id.
-            FILTER (?id >= """ + """'""" + start + """')
-            FILTER (?id <= """ + """'""" + end + """')
+            ?place res:name ?name.
+            ?place res:url ?url.
+            ?place res:rating ?rating.
+            ?place res:image ?image.
+            ?place res:id ?id.  
+            FILTER (?id >= """ + start + """)
+            FILTER (?id <= """ + end + """)
         } 
         ORDER BY (?id)
-        """)
-    for row in result:
-        print(row.id.toPython())
+        """
+    g.setQuery(queryString)
+    g.setReturnFormat(JSON)
+    results = g.query().convert()
+    # for result in results:
+    #     print(result)
+    for row in results["results"]["bindings"]:
+        print(row["id"]["value"])
         lJson = {
-            "url": row.url.toPython(),
-            "name": row.name.toPython(),
-            "rate": row.rating.toPython(),
-            "image": row.image.toPython()
+            "url": row["url"]["value"],
+            "name": row["name"]["value"],
+            "rate": row["rating"]["value"],
+            "image": row["image"]["value"]
         }
         dt.append(lJson)
     return JsonResponse({
@@ -111,12 +99,14 @@ def search(request):
     #     "data": []
     # })
     dt = []
-    g = rdflib.Graph()
-    g = g.parse("hnag/static/hnag/restaurants.xml", format="xml")
+    # g = rdflib.Graph()
+    # g = g.parse("hnag/static/hnag/restaurants.xml", format="xml")
+    g = SPARQLWrapper("http://localhost:7200/repositories/HNAG")
     
-    if (len(duong) == 0):  
+    if (len(duong) == 0): 
         if (len(mon) == 0):      
-            result = g.query("""
+            queryString = """
+                PREFIX res: <http://www.hnag.com/>
                 SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
                 WHERE {
                     ?place res:name ?name.
@@ -128,9 +118,13 @@ def search(request):
                     FILTER regex(?name,""" + """'""" + search + """','i').            
                 } 
                 ORDER BY (?id)
-                """)
+                """
+            print(queryString)
+            g.setQuery(queryString)
+            
         else:
-            result = g.query("""
+            queryString = """
+                PREFIX res: <http://www.hnag.com/>
                 SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
                 WHERE {
                     ?place res:name ?name.
@@ -142,7 +136,9 @@ def search(request):
                     FILTER regex(?name,""" + """'""" + mon[0] + """','i').            
                 } 
                 ORDER BY (?id)
-                """)
+                """
+            print(queryString)
+            g.setQuery(queryString)
     else:
         print(mon)
         print(duong)
@@ -150,13 +146,15 @@ def search(request):
         for i in range(len(mon)):
             regex += """FILTER regex(?name,""" + """'""" + mon[i] + """','i')."""
         for i in range(len(duong)):
-            regex += """FILTER regex(?address,""" + """'""" + duong[i] + """','i')."""
+            regex += """FILTER regex(?street,""" + """'""" + duong[i] + """','i')."""
         print(regex)
-        result = g.query("""
+        queryString = """
+            PREFIX res: <http://www.hnag.com/>
             SELECT DISTINCT ?name ?address ?url ?rating ?image ?id
             WHERE {
                 ?place res:name ?name.
                 ?place res:address ?address.
+                ?address res:street ?street.
                 ?place res:url ?url.
                 ?place res:rating ?rating.
                 ?place res:image ?image.
@@ -164,15 +162,19 @@ def search(request):
                 """ + regex + """            
             } 
             ORDER BY (?id)
-            """)        
-    for row in result:        
-        print(row.id.toPython())
+            """
+        print(queryString)
+        g.setQuery(queryString) 
+    g.setReturnFormat(JSON)
+    results = g.query().convert() 
+    
+    for row in results["results"]["bindings"]:
+        print(row["id"]["value"])
         lJson = {
-            "address": row.address.toPython(),
-            "url": row.url.toPython(),
-            "name": row.name.toPython(),
-            "rate": row.rating.toPython(),
-            "image": row.image.toPython()
+            "url": row["url"]["value"],
+            "name": row["name"]["value"],
+            "rate": row["rating"]["value"],
+            "image": row["image"]["value"]
         }
         dt.append(lJson)
     return JsonResponse({
