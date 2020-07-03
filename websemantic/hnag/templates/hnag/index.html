@@ -45,9 +45,21 @@
 			//Show modal whenever a card is clicked
 			function showModal(e) {
 				//alert('hello');
-				const modal = $("#detailModal");
+				
 				const imgSrc = $(e).find("img").attr("src");
+				const title = $(e).find("h5.card-title").html() 
+							+ ' - ' + $(e).find("p.card-text").html();
+				const url = $(e).find("a:hidden").attr("href");
+
+				console.log(imgSrc)
+				console.log(title)
+				console.log(url)
+
+				const modal = $("#detailModal");
 				modal.find("img").attr("src", imgSrc); 
+				modal.find("#modalUrl").attr("href", url);
+				modal.find("h5.modal-title").html(title);
+
 				modal.modal();
 				e.preventDefault();
 				return false;
@@ -62,7 +74,7 @@
 
 				//link to the main post
 				const urlWrapper = document.createElement('a');
-				urlWrapper.href = "https://www.foody.vn/"+contents["url"]
+				// urlWrapper.href = "https://www.foody.vn/"+contents["url"]
 				urlWrapper.onclick = () => {
 					showModal(post)
 				}
@@ -87,12 +99,17 @@
 				h5.className = "card-title"
 				h5.innerHTML = contents["name"];
 
-				const prate = document.createElement('p')
-				prate.className = "card-text"
-				prate.innerHTML = `Rating: ${contents["rate"]}`
+				const rating = document.createElement('p')
+				rating.className = "card-text"
+				rating.innerHTML = `Rating: ${contents["rate"]}`
+
+				const url = document.createElement('a')
+				url.href = "https://www.foody.vn/"+contents["url"]
+				url.hidden = true
 
 				post_card.append(h5)
-				post_card.append(prate)
+				post_card.append(rating)
+				post_card.append(url)
 
 				post.append(post_img)
 				post.append(post_card)
@@ -168,7 +185,7 @@
 					<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-							<!-- <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5> -->
+							<h5 class="modal-title" id="exampleModalCenterTitle"></h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -179,7 +196,9 @@
 										<div class="col-md-8">
 											<img style="width:100%;">
 										</div>
-										<div class="col-md-4">content</div>
+										<div class="col-md-4">
+											<a id="modalUrl" target="_blank">Đến bài viết gốc</a>
+										</div>
 									</div>
 								</div>
 							</div>
