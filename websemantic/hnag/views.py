@@ -27,11 +27,11 @@ def login_view(request):
         login(request, user)
         return HttpResponseRedirect(reverse("index"))
     else:
-        return render(request, "hnag/login.html", {"message": "Invalid credentials."})
+        return render(request, "hnag/login.html", {"message": "Invalid username or password."})
 
 def logout_view(request):
     logout(request)
-    return render(request, "hnag/login.html", {"message": "Logged out."})
+    return render(request, "hnag/login.html", {"message": "Logged out successfully."})
 
 def posts(request):
     # Get start and end point for posts to generate.
@@ -126,10 +126,12 @@ def search(request):
     checkquan = ['Quận', 'quận']
     for i in range(len(rs)):
         if rs[i][1] in ['Np','N','M']:
-            if i == 0:
-                if rs[i][1] in ['Np','N','M'] and rs[i+1][1] == 'E':
-                    mon.append(rs[i][0])
+            if i == 0:                
+                if rs[i][1] in ['Np','N','M']:
+                    if len(rs) > 1 and rs[i+1][1] == 'E':
+                        mon.append(rs[i][0])
             else:
+                # print("i: ",i)
                 if rs[i-1][0] in checkquan:
                     quan.append(rs[i][0]) 
                 elif rs[i-1][0] in checkduong:
@@ -137,8 +139,8 @@ def search(request):
                 elif str(rs[i-1][0]).isnumeric():
                     soduong = rs[i-1][0] + " " + rs[i][0]
                     duong.append(soduong)              
-                elif rs[i-1][1] == 'V' or rs[i+1][1] == 'E':
-                    mon.append(rs[i][0])   
+                elif rs[i-1][1] == 'V' or rs[i+1][1] == 'E':                    
+                    mon.append(rs[i][0])                   
                 
         # if rs[i][1] in ['Np','N','M'] and rs[i-1][0] in checkquan:
         #     quan.append(rs[i][0])

@@ -172,7 +172,7 @@
 					<button id="bt-search" class="btn btn-outline-primary my-2 my-sm-0" type="button" onclick="Search();">Search</button>
 				</form>
 				<form action="{% url 'logout' %}">					
-					<button class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Log out</button>						
+					<button name="logout" class="btn btn-outline-primary my-2 my-sm-0" type="submit" >Log out</button>						
 				</form>
 			</nav>
 			<div>Currently logged in as: {{ user.username }}</div>
